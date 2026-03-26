@@ -25,7 +25,7 @@ from ni_analysis.features.feature_table import (
     build_feature_dataframe,
     save_feature_outputs,
 )
-from ni_analysis.features.morphology_features import compute_morphology_features
+from ni_analysis.features.morphology_features import compute_all_shape_features
 from ni_analysis.utils.io_utils import load_mask
 
 
@@ -64,7 +64,7 @@ def main() -> None:
             continue
 
         mask = load_mask(mask_path)
-        feats = compute_morphology_features(mask)
+        feats = compute_all_shape_features(mask)
 
         row = item.to_dict()
         row.update(feats)

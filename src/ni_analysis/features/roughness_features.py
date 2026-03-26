@@ -1,13 +1,11 @@
 """
-roughness_features.py
+Path
+----
+ni-analysis-v2/src/ni_analysis/features/roughness_features.py
 
 Role
 ----
-Experimental roughness-related shape descriptors for binary particle masks.
-
-These are not yet the final scientific definitions.
-They are modularized here so they can evolve independently from the
-basic morphology feature set.
+Experimental roughness-related descriptors for binary particle masks.
 """
 
 from __future__ import annotations

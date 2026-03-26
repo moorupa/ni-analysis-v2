@@ -1,18 +1,18 @@
 """
-spikiness_features.py
+Path
+----
+ni-analysis-v2/src/ni_analysis/features/spikiness_features.py
 
 Role
 ----
 Experimental spikiness-oriented descriptors for binary particle masks.
-
-This module is intentionally separated from generic morphology features
-because the exact scientific definition of "spikiness" may evolve.
 """
 
 from __future__ import annotations
 
 import numpy as np
 from skimage import measure
+from skimage.morphology import convex_hull_image
 
 
 def _largest_contour(mask: np.ndarray) -> np.ndarray | None:
@@ -28,8 +28,6 @@ def convexity_deficit(mask: np.ndarray) -> float:
     area = float(mask.sum())
     if area <= 0:
         return float("nan")
-
-    from skimage.morphology import convex_hull_image
 
     hull = convex_hull_image(mask > 0)
     hull_area = float(hull.sum())
@@ -52,9 +50,6 @@ def peak_count_proxy(mask: np.ndarray, smooth_window: int = 9) -> float:
     cy = float(ys.mean())
 
     dists = np.sqrt((contour[:, 1] - cx) ** 2 + (contour[:, 0] - cy) ** 2)
-
-    if len(dists) < smooth_window:
-        return float("nan")
 
     kernel = np.ones(smooth_window) / smooth_window
     smooth = np.convolve(dists, kernel, mode="same")

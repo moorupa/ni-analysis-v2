@@ -1,0 +1,27 @@
+# Path
+# ni-analysis-v2/configs/review_session.yaml
+
+review:
+  reviewer_id: default_reviewer
+  default_review_label: reject_uncertain
+  default_morphology_label: unlabeled
+  default_confidence: 3
+
+labels:
+  review_labels:
+    - accept_single
+    - reject_noise
+    - reject_artifact
+    - reject_border
+    - reject_merged
+    - reject_duplicate
+    - reject_uncertain
+    - needs_redraw
+
+  morphology_labels:
+    - spiky
+    - rough
+    - smooth
+    - agglomerated
+    - ambiguous
+    - unlabeled

@@ -1,0 +1,25 @@
+# Path
+# ni-analysis-v2/configs/legacy_prompt_baseline.yaml
+
+model_type: sam3
+checkpoint_path: ""
+device: null
+
+preprocessing:
+  apply_preprocessing: true
+
+baseline:
+  prompt: "spiky particle"
+
+postprocess:
+  min_area: 50
+  max_area: null
+  kernel_size: 3
+  do_open: true
+  do_close: true
+  fill_holes: true
+  remove_border_touching: true
+  deduplicate_iou_thresh: 0.85
+  remove_nested: true
+  nested_overlap_thresh: 0.95
+  sort_by: area_desc

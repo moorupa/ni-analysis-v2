@@ -6,11 +6,6 @@ ni-analysis-v2/src/ni_analysis/features/morphology_features.py
 Role
 ----
 Basic mask-based morphology feature extraction for ni-analysis-v2.
-
-Design note
------------
-This file provides the stable, generic feature set.
-Roughness/spikiness proxies can be merged in later from separate modules.
 """
 
 from __future__ import annotations
@@ -20,6 +15,9 @@ from typing import Any
 
 import cv2
 import numpy as np
+
+from ni_analysis.features.roughness_features import compute_roughness_features
+from ni_analysis.features.spikiness_features import compute_spikiness_features
 
 
 def to_binary_mask(mask: np.ndarray) -> np.ndarray:
@@ -119,3 +117,10 @@ def compute_morphology_features(mask: np.ndarray) -> dict[str, Any]:
         "solidity": solidity,
         "circularity": circularity,
     }
+
+
+def compute_all_shape_features(mask: np.ndarray) -> dict[str, Any]:
+    base = compute_morphology_features(mask)
+    rough = compute_roughness_features(mask)
+    spike = compute_spikiness_features(mask)
+    return {**base, **rough, **spike}
