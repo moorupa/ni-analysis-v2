@@ -1,14 +1,21 @@
 """
-review_schema.py
+Path
+----
+ni-analysis-v2/src/ni_analysis/review/review_schema.py
 
 Role
 ----
-Define strongly-typed schemas for human review outputs.
+Typed schema definitions for human review in ni-analysis-v2.
 
-The schema is intentionally explicit because reviewed outputs become:
+Why this exists
+---------------
+The reviewed output is not just a temporary annotation artifact.
+It becomes:
+
 1) the source of truth for accepted masks
-2) training/finetuning dataset material
-3) exported morphology analysis subsets
+2) the basis for reviewed dataset export
+3) the basis for downstream feature extraction
+4) a possible finetuning / hard-negative dataset later
 """
 
 from __future__ import annotations
@@ -23,6 +30,7 @@ ReviewLabel = Literal[
     "reject_artifact",
     "reject_border",
     "reject_merged",
+    "reject_duplicate",
     "reject_uncertain",
     "needs_redraw",
 ]
@@ -45,8 +53,8 @@ class ReviewDecision:
     confidence: int = 3  # 1~5
     reviewer_id: str = "default_reviewer"
     comment: str = ""
-    edited_mask_path: str | None = None
     source_mask_path: str | None = None
+    edited_mask_path: str | None = None
     source_image_path: str | None = None
     bbox_xyxy: tuple[int, int, int, int] | None = None
     extra_metadata: dict[str, Any] = field(default_factory=dict)
@@ -79,7 +87,3 @@ def validate_review_decision(decision: ReviewDecision) -> None:
 
     if decision.confidence < 1 or decision.confidence > 5:
         raise ValueError("confidence must be between 1 and 5")
-
-    if decision.review_label == "accept_single" and decision.morphology_label == "unlabeled":
-        # 허용은 하되 downstream에서 경고 가능
-        pass

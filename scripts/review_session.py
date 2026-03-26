@@ -1,28 +1,29 @@
 """
-review_session.py
+Path
+----
+ni-analysis-v2/scripts/review_session.py
 
 Role
 ----
-CLI entry point for a review session.
+CLI entry point for initializing or inspecting a review session.
 
-Current skeleton scope
-----------------------
-- load candidate manifest
-- initialize empty review decisions
-- save a review-session JSON scaffold
+Current scope
+-------------
+1) initialize a review session from candidate_manifest.json
+2) load an existing review session
+3) print session summary
+4) save scaffold JSON
 
-Future expansion
-----------------
-- OpenCV/Qt interactive review UI
-- keyboard label shortcuts
-- local redraw / box-refine integration
+Future scope
+------------
+- keyboard-driven review UI
+- OpenCV overlay visualization
 - edited mask save-back
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
 
@@ -31,65 +32,74 @@ SRC_ROOT = PROJECT_ROOT / "src"
 if str(SRC_ROOT) not in sys.path:
     sys.path.append(str(SRC_ROOT))
 
-from ni_analysis.review.review_schema import ReviewDecision, ReviewSessionRecord
+from ni_analysis.review.review_io import (
+    build_empty_review_session_from_manifest,
+    load_review_session,
+    save_review_session,
+)
+from ni_analysis.review.review_session_core import summarize_session
+from ni_analysis.utils.io_utils import ensure_dir, load_json
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Initialize or continue a review session.")
-    parser.add_argument("--manifest", type=str, required=True, help="Path to candidate_manifest.json")
-    parser.add_argument("--output-dir", type=str, required=True, help="Directory for review outputs")
-    parser.add_argument("--session-id", type=str, required=True, help="Review session ID")
-    parser.add_argument("--reviewer-id", type=str, default="default_reviewer", help="Reviewer ID")
+    parser = argparse.ArgumentParser(description="Initialize or inspect review session.")
+
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    init_parser = subparsers.add_parser("init", help="Initialize review session from manifest")
+    init_parser.add_argument("--manifest", type=str, required=True)
+    init_parser.add_argument("--output-dir", type=str, required=True)
+    init_parser.add_argument("--session-id", type=str, required=True)
+    init_parser.add_argument("--reviewer-id", type=str, default="default_reviewer")
+
+    summary_parser = subparsers.add_parser("summary", help="Print review session summary")
+    summary_parser.add_argument("--session", type=str, required=True)
+
     return parser.parse_args()
+
+
+def cmd_init(args: argparse.Namespace) -> None:
+    manifest = load_json(args.manifest)
+    output_dir = ensure_dir(args.output_dir)
+
+    session = build_empty_review_session_from_manifest(
+        manifest=manifest,
+        session_id=args.session_id,
+        reviewer_id=args.reviewer_id,
+    )
+
+    session_path = output_dir / f"{args.session_id}.review.json"
+    save_review_session(session, session_path)
+
+    summary = summarize_session(session)
+
+    print("[DONE] Review session initialized.")
+    print(f"Session path : {session_path}")
+    print(f"Total        : {summary['total']}")
+    print(f"Accepted     : {summary['accepted']}")
+    print(f"Rejected     : {summary['rejected']}")
+    print(f"Needs redraw : {summary['needs_redraw']}")
+    print(f"Unreviewed   : {summary['unreviewed_like']}")
+
+
+def cmd_summary(args: argparse.Namespace) -> None:
+    session = load_review_session(args.session)
+    summary = summarize_session(session)
+
+    print("[INFO] Review session summary")
+    for key, value in summary.items():
+        print(f"{key}: {value}")
 
 
 def main() -> None:
     args = parse_args()
 
-    manifest_path = Path(args.manifest)
-    output_dir = Path(args.output_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    if not manifest_path.exists():
-        raise FileNotFoundError(f"Manifest not found: {manifest_path}")
-
-    with manifest_path.open("r", encoding="utf-8") as f:
-        manifest = json.load(f)
-
-    decisions: list[ReviewDecision] = []
-    for item in manifest.get("candidates", []):
-        decisions.append(
-            ReviewDecision(
-                candidate_id=item["candidate_id"],
-                review_label="reject_uncertain",
-                morphology_label="unlabeled",
-                confidence=3,
-                reviewer_id=args.reviewer_id,
-                source_mask_path=item.get("mask_path"),
-                source_image_path=manifest.get("source_image_path"),
-                bbox_xyxy=tuple(item["bbox_xyxy"]) if item.get("bbox_xyxy") is not None else None,
-                comment="initialized; not yet reviewed",
-            )
-        )
-
-    session = ReviewSessionRecord(
-        session_id=args.session_id,
-        source_image_id=manifest["source_image_id"],
-        source_image_path=manifest["source_image_path"],
-        decisions=decisions,
-        session_metadata={
-            "manifest_path": str(manifest_path),
-            "candidate_count": len(decisions),
-            "status": "initialized",
-        },
-    )
-
-    session_path = output_dir / f"{args.session_id}.review.json"
-    with session_path.open("w", encoding="utf-8") as f:
-        json.dump(session.to_dict(), f, indent=2, ensure_ascii=False)
-
-    print("[DONE] Review session scaffold created.")
-    print(f"Session file: {session_path}")
+    if args.command == "init":
+        cmd_init(args)
+    elif args.command == "summary":
+        cmd_summary(args)
+    else:
+        raise ValueError(f"Unknown command: {args.command}")
 
 
 if __name__ == "__main__":
