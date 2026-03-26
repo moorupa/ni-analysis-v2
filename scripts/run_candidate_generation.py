@@ -49,6 +49,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--min-area", type=int, default=50)
     parser.add_argument("--max-area", type=int, default=None)
     parser.add_argument("--kernel-size", type=int, default=3)
+    parser.add_argument("--sampling-grid-size", type=int, default=32)
+    parser.add_argument("--pred-iou-thresh", type=float, default=0.70)
+    parser.add_argument("--stability-score-thresh", type=float, default=0.70)
+    parser.add_argument("--min-mask-region-area", type=int, default=0)
     return parser.parse_args()
 
 
@@ -74,6 +78,10 @@ def main() -> None:
         max_area=args.max_area,
         kernel_size=args.kernel_size,
         remove_border_touching=True,
+        sampling_grid_size=args.sampling_grid_size,
+        pred_iou_thresh=args.pred_iou_thresh,
+        stability_score_thresh=args.stability_score_thresh,
+        min_mask_region_area=args.min_mask_region_area,        
     )
 
     batch = generator.generate(

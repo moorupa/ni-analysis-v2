@@ -53,10 +53,6 @@ class CandidateBatch:
 
 
 class CandidateGenerator:
-    """
-    Prompt-free candidate generation pipeline for a single image.
-    """
-
     def __init__(
         self,
         backend: SAMBackend,
@@ -64,12 +60,20 @@ class CandidateGenerator:
         max_area: int | None = None,
         kernel_size: int = 3,
         remove_border_touching: bool = True,
+        sampling_grid_size: int = 32,
+        pred_iou_thresh: float = 0.70,
+        stability_score_thresh: float = 0.70,
+        min_mask_region_area: int = 0,
     ) -> None:
         self.backend = backend
         self.min_area = min_area
         self.max_area = max_area
         self.kernel_size = kernel_size
         self.remove_border_touching = remove_border_touching
+        self.sampling_grid_size = sampling_grid_size
+        self.pred_iou_thresh = pred_iou_thresh
+        self.stability_score_thresh = stability_score_thresh
+        self.min_mask_region_area = min_mask_region_area
 
     def generate(
         self,
@@ -77,12 +81,13 @@ class CandidateGenerator:
         source_image_id: str,
         apply_preprocessing: bool = True,
     ) -> CandidateBatch:
-        """
-        Generate review-ready candidates from one image.
-        """
         result = self.backend.generate_candidates(
             image=image,
             apply_preprocessing=apply_preprocessing,
+            sampling_grid_size=self.sampling_grid_size,
+            pred_iou_thresh=self.pred_iou_thresh,
+            stability_score_thresh=self.stability_score_thresh,
+            min_mask_region_area=self.min_mask_region_area,
         )
 
         config = PostprocessConfig(
@@ -92,10 +97,7 @@ class CandidateGenerator:
             remove_border_touching=self.remove_border_touching,
         )
 
-        cleaned_masks = postprocess_candidate_masks(
-            result.masks,
-            config=config,
-        )
+        cleaned_masks = postprocess_candidate_masks(result.masks, config=config)
 
         candidates: list[CandidateRecord] = []
         for idx, mask in enumerate(cleaned_masks, start=1):
