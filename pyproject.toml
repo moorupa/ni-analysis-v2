@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ni-analysis-v2"
+version = "0.1.0"
+description = "Prompt-free candidate generation + HITL review + morphology quantification pipeline for SEM particle analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Beomseok Maeng" }
+]
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "opencv-python>=4.8",
+  "Pillow>=10.0",
+  "matplotlib>=3.7",
+  "scipy>=1.10",
+  "scikit-image>=0.21",
+  "tqdm>=4.66",
+  "pyyaml>=6.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
