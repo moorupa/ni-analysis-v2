@@ -1,5 +1,7 @@
 """
-candidate_generator.py
+Path
+----
+ni-analysis-v2/src/ni_analysis/segmentation/candidate_generator.py
 
 Role
 ----
@@ -12,8 +14,6 @@ Responsibilities
 3) assign candidate IDs
 4) attach lightweight per-candidate metadata
 5) prepare outputs for review stage
-
-This file should be the main segmentation-side entry point for v2.
 """
 
 from __future__ import annotations
@@ -25,7 +25,12 @@ import numpy as np
 from PIL import Image
 
 from ni_analysis.segmentation.sam_backend import SAMBackend
-from ni_analysis.segmentation.mask_postprocess import postprocess_masks
+from ni_analysis.segmentation.mask_postprocess import (
+    PostprocessConfig,
+    bbox_xyxy,
+    mask_area,
+    postprocess_candidate_masks,
+)
 
 
 @dataclass
@@ -45,13 +50,6 @@ class CandidateBatch:
     image_rgb: np.ndarray
     candidates: list[CandidateRecord]
     run_metadata: dict[str, Any]
-
-
-def compute_bbox_xyxy(mask: np.ndarray) -> tuple[int, int, int, int] | None:
-    ys, xs = np.where(mask > 0)
-    if len(xs) == 0 or len(ys) == 0:
-        return None
-    return int(xs.min()), int(ys.min()), int(xs.max()), int(ys.max())
 
 
 class CandidateGenerator:
@@ -87,21 +85,22 @@ class CandidateGenerator:
             apply_preprocessing=apply_preprocessing,
         )
 
-        cleaned_masks = postprocess_masks(
-            masks=result.masks,
+        config = PostprocessConfig(
             min_area=self.min_area,
             max_area=self.max_area,
             kernel_size=self.kernel_size,
-            do_open=True,
-            do_close=True,
-            fill_holes=True,
             remove_border_touching=self.remove_border_touching,
+        )
+
+        cleaned_masks = postprocess_candidate_masks(
+            result.masks,
+            config=config,
         )
 
         candidates: list[CandidateRecord] = []
         for idx, mask in enumerate(cleaned_masks, start=1):
-            bbox = compute_bbox_xyxy(mask)
-            area_px = int(np.asarray(mask).sum())
+            bbox = bbox_xyxy(mask)
+            area_px = mask_area(mask)
             raw_score = result.scores[idx - 1] if idx - 1 < len(result.scores) else None
 
             candidates.append(

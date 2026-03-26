@@ -1,5 +1,7 @@
 """
-run_candidate_generation.py
+Path
+----
+ni-analysis-v2/scripts/run_candidate_generation.py
 
 Role
 ----
@@ -10,13 +12,11 @@ Outputs
 - candidate masks
 - overlay image
 - candidate manifest JSON
-- optional preview table for later review
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
 
@@ -29,7 +29,12 @@ if str(SRC_ROOT) not in sys.path:
 
 from ni_analysis.segmentation.sam_backend import SAMBackend
 from ni_analysis.segmentation.candidate_generator import CandidateGenerator
-from ni_analysis.utils.io_utils import ensure_dir, save_mask_png, save_overlay_png
+from ni_analysis.utils.io_utils import (
+    build_candidate_mask_path,
+    save_candidate_manifest,
+    save_mask,
+    save_overlay,
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -51,8 +56,7 @@ def main() -> None:
     args = parse_args()
 
     image_path = Path(args.image)
-    output_dir = ensure_dir(args.output_dir)
-    masks_dir = ensure_dir(output_dir / "candidate_masks")
+    output_dir = Path(args.output_dir)
 
     if not image_path.exists():
         raise FileNotFoundError(f"Image not found: {image_path}")
@@ -78,44 +82,44 @@ def main() -> None:
         apply_preprocessing=True,
     )
 
-    saved_mask_paths: list[str] = []
+    candidate_rows: list[dict] = []
+    saved_masks: list = []
+
     for cand in batch.candidates:
-        mask_path = masks_dir / f"{cand.candidate_id}.png"
-        save_mask_png(cand.mask, mask_path)
-        saved_mask_paths.append(str(mask_path))
+        mask_path = build_candidate_mask_path(output_dir, cand.candidate_id)
+        save_mask(cand.mask, mask_path)
+        saved_masks.append(cand.mask)
+
+        candidate_rows.append(
+            {
+                "candidate_id": cand.candidate_id,
+                "score": cand.score,
+                "area_px": cand.area_px,
+                "bbox_xyxy": cand.bbox_xyxy,
+                "mask_path": str(mask_path),
+                "source_image_id": cand.source_image_id,
+                "metadata": cand.metadata,
+            }
+        )
 
     overlay_path = output_dir / "candidate_overlay.png"
-    save_overlay_png(
+    save_overlay(
         image=batch.image_rgb,
-        masks=[c.mask for c in batch.candidates],
-        save_path=overlay_path,
+        masks=saved_masks,
+        path=overlay_path,
         alpha=0.45,
         draw_boundaries=True,
     )
 
-    manifest = {
-        "source_image_id": batch.source_image_id,
-        "source_image_path": str(image_path),
-        "overlay_path": str(overlay_path),
-        "candidate_count": len(batch.candidates),
-        "run_metadata": batch.run_metadata,
-        "candidates": [
-            {
-                "candidate_id": c.candidate_id,
-                "score": c.score,
-                "area_px": c.area_px,
-                "bbox_xyxy": c.bbox_xyxy,
-                "mask_path": saved_mask_paths[idx],
-                "source_image_id": c.source_image_id,
-                "metadata": c.metadata,
-            }
-            for idx, c in enumerate(batch.candidates)
-        ],
-    }
-
     manifest_path = output_dir / "candidate_manifest.json"
-    with manifest_path.open("w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    save_candidate_manifest(
+        source_image_id=batch.source_image_id,
+        source_image_path=str(image_path),
+        overlay_path=str(overlay_path),
+        run_metadata=batch.run_metadata,
+        candidates=candidate_rows,
+        path=manifest_path,
+    )
 
     print("[DONE] Candidate generation completed.")
     print(f"Candidates : {len(batch.candidates)}")

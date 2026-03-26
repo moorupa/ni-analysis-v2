@@ -1,5 +1,7 @@
 """
-sam_backend.py
+Path
+----
+ni-analysis-v2/src/ni_analysis/segmentation/sam_backend.py
 
 Role
 ----
@@ -11,11 +13,6 @@ Its primary responsibility is:
 2) preprocess image
 3) generate image-conditioned candidate masks
 4) optionally support legacy text-prompt path for baseline only
-
-Notes
------
-- The main v2 workflow should call `generate_candidates(...)`.
-- The text-prompt path is preserved only for legacy baseline comparison.
 """
 
 from __future__ import annotations
@@ -43,10 +40,6 @@ class CandidateGenerationResult:
 
 
 class SAMBackend:
-    """
-    Backend wrapper for candidate generation and optional legacy prompt segmentation.
-    """
-
     def __init__(
         self,
         checkpoint_path: str | Path | None = None,
@@ -65,26 +58,12 @@ class SAMBackend:
 
     def _build_model(self) -> Any:
         """
-        Build and return model object.
-
         Replace this body with actual SAM/SAM2/SAM3 loading logic.
         """
-        # Example placeholder:
-        # from sam3.model_builder import build_sam3_image_model
-        # if self.checkpoint_path is not None:
-        #     model = build_sam3_image_model(checkpoint=str(self.checkpoint_path))
-        # else:
-        #     model = build_sam3_image_model()
-        # model.to(self.device)
-        # return model
         return None
 
     @staticmethod
     def preprocess_image(pil_img: Image.Image) -> Image.Image:
-        """
-        Contrast enhancement for SEM-like images.
-        Reuses the CLAHE-style idea from v1.
-        """
         if not isinstance(pil_img, Image.Image):
             raise TypeError("pil_img must be a PIL.Image.Image")
 
@@ -110,28 +89,6 @@ class SAMBackend:
         stability_score_thresh: float = 0.70,
         min_mask_region_area: int = 0,
     ) -> CandidateGenerationResult:
-        """
-        Prompt-free candidate generation entry point for v2.
-
-        Parameters
-        ----------
-        image : PIL.Image.Image
-            Input SEM image.
-        apply_preprocessing : bool
-            Whether to apply CLAHE-like preprocessing.
-        sampling_grid_size : int
-            Placeholder for dense image-conditioned point/grid sampling.
-        pred_iou_thresh : float
-            Placeholder threshold for mask quality.
-        stability_score_thresh : float
-            Placeholder threshold for mask stability.
-        min_mask_region_area : int
-            Placeholder post-filter parameter.
-
-        Returns
-        -------
-        CandidateGenerationResult
-        """
         if not isinstance(image, Image.Image):
             raise TypeError("image must be a PIL.Image.Image")
 
@@ -141,7 +98,6 @@ class SAMBackend:
 
         image_rgb = np.array(processed)
 
-        # TODO: Replace placeholder implementation with actual automatic mask generation.
         masks: list[np.ndarray] = []
         scores: list[float] = []
 
@@ -168,10 +124,6 @@ class SAMBackend:
         prompt: str,
         apply_preprocessing: bool = True,
     ) -> CandidateGenerationResult:
-        """
-        Legacy baseline path only.
-        Not for main v2 workflow.
-        """
         if not prompt.strip():
             raise ValueError("prompt must be non-empty")
 
@@ -181,7 +133,6 @@ class SAMBackend:
 
         image_rgb = np.array(processed)
 
-        # TODO: Replace with actual v1-compatible prompt segmentation logic.
         masks: list[np.ndarray] = []
         scores: list[float] = []
 
