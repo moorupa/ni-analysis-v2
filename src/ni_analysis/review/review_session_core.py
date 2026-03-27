@@ -1,17 +1,3 @@
-"""
-Path
-----
-ni-analysis-v2/src/ni_analysis/review/review_session_core.py
-
-Role
-----
-Core manipulation logic for review sessions.
-
-This module does not implement the full interactive UI yet.
-Instead, it provides structured update helpers so the review workflow
-can evolve without putting business logic directly into the script layer.
-"""
-
 from __future__ import annotations
 
 from ni_analysis.review.review_schema import ReviewDecision, ReviewSessionRecord
@@ -43,9 +29,9 @@ def update_decision(
     decision = session.decisions[idx]
 
     if review_label is not None:
-        decision.review_label = review_label  # type: ignore[assignment]
+        decision.review_label = review_label
     if morphology_label is not None:
-        decision.morphology_label = morphology_label  # type: ignore[assignment]
+        decision.morphology_label = morphology_label
     if confidence is not None:
         decision.confidence = int(confidence)
     if comment is not None:
@@ -76,3 +62,7 @@ def summarize_session(session: ReviewSessionRecord) -> dict:
             summary["rejected"] += 1
 
     return summary
+
+
+def list_candidate_ids(session: ReviewSessionRecord) -> list[str]:
+    return [d.candidate_id for d in session.decisions]
