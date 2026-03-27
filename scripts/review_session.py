@@ -5,20 +5,7 @@ ni-analysis-v2/scripts/review_session.py
 
 Role
 ----
-CLI entry point for initializing or inspecting a review session.
-
-Current scope
--------------
-1) initialize a review session from candidate_manifest.json
-2) load an existing review session
-3) print session summary
-4) save scaffold JSON
-
-Future scope
-------------
-- keyboard-driven review UI
-- OpenCV overlay visualization
-- edited mask save-back
+Initialize, inspect, list, and update review sessions.
 """
 
 from __future__ import annotations
@@ -37,13 +24,18 @@ from ni_analysis.review.review_io import (
     load_review_session,
     save_review_session,
 )
-from ni_analysis.review.review_session_core import summarize_session
+from ni_analysis.review.review_session_core import (
+    list_candidate_ids,
+    summarize_session,
+    update_decision,
+)
 from ni_analysis.utils.io_utils import ensure_dir, load_json
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Initialize or inspect review session.")
-
+    parser = argparse.ArgumentParser(
+        description="Initialize, inspect, list, or update review session."
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     init_parser = subparsers.add_parser("init", help="Initialize review session from manifest")
@@ -54,6 +46,18 @@ def parse_args() -> argparse.Namespace:
 
     summary_parser = subparsers.add_parser("summary", help="Print review session summary")
     summary_parser.add_argument("--session", type=str, required=True)
+
+    list_parser = subparsers.add_parser("list", help="List candidate IDs in a review session")
+    list_parser.add_argument("--session", type=str, required=True)
+
+    update_parser = subparsers.add_parser("update", help="Update one review decision")
+    update_parser.add_argument("--session", type=str, required=True)
+    update_parser.add_argument("--candidate-id", type=str, required=True)
+    update_parser.add_argument("--review-label", type=str, default=None)
+    update_parser.add_argument("--morphology-label", type=str, default=None)
+    update_parser.add_argument("--confidence", type=int, default=None)
+    update_parser.add_argument("--comment", type=str, default=None)
+    update_parser.add_argument("--edited-mask-path", type=str, default=None)
 
     return parser.parse_args()
 
@@ -91,6 +95,33 @@ def cmd_summary(args: argparse.Namespace) -> None:
         print(f"{key}: {value}")
 
 
+def cmd_list(args: argparse.Namespace) -> None:
+    session = load_review_session(args.session)
+    for cid in list_candidate_ids(session):
+        print(cid)
+
+
+def cmd_update(args: argparse.Namespace) -> None:
+    session_path = Path(args.session)
+    session = load_review_session(session_path)
+
+    update_decision(
+        session,
+        candidate_id=args.candidate_id,
+        review_label=args.review_label,
+        morphology_label=args.morphology_label,
+        confidence=args.confidence,
+        comment=args.comment,
+        edited_mask_path=args.edited_mask_path,
+    )
+
+    save_review_session(session, session_path)
+
+    print("[DONE] Review decision updated.")
+    print(f"Session   : {session_path}")
+    print(f"Candidate : {args.candidate_id}")
+
+
 def main() -> None:
     args = parse_args()
 
@@ -98,6 +129,10 @@ def main() -> None:
         cmd_init(args)
     elif args.command == "summary":
         cmd_summary(args)
+    elif args.command == "list":
+        cmd_list(args)
+    elif args.command == "update":
+        cmd_update(args)
     else:
         raise ValueError(f"Unknown command: {args.command}")
 
