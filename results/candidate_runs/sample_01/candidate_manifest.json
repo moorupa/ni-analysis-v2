@@ -1,0 +1,3216 @@
+{
+  "source_image_id": "sample_01",
+  "source_image_path": "C:\\Users\\admin\\Downloads\\euang_backup\\4. other info\\Kakaotalks\\260227_0.1M\\R2_0.1M_RE\\AnnoStatus_20260227,120934.jpg",
+  "overlay_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_overlay.png",
+  "candidate_count": 133,
+  "run_metadata": {
+    "mode": "prompt_free_candidate_generation",
+    "device": "cuda",
+    "model_type": "sam3",
+    "apply_preprocessing": true,
+    "backend_mode": "fallback_connected_components",
+    "foreground_ratio_after_threshold": 0.4496256510416667,
+    "sampling_grid_size": 32,
+    "pred_iou_thresh": 0.7,
+    "stability_score_thresh": 0.7,
+    "min_mask_region_area": 0,
+    "source_image_id": "sample_01",
+    "raw_candidate_count": 534,
+    "postprocessed_candidate_count": 133,
+    "objectness_prior_enabled": false
+  },
+  "candidates": [
+    {
+      "candidate_id": "sample_01_cand_0001",
+      "score": 0.001318359375,
+      "area_px": 42467,
+      "bbox_xyxy": [
+        945,
+        175,
+        1267,
+        485
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0001.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 42467,
+        "bbox_width": 322,
+        "bbox_height": 310,
+        "aspect_ratio": 1.038709677419355,
+        "extent": 0.4254357844119415,
+        "solidity": 0.6301071680482977,
+        "circularity": 0.07311276129889323,
+        "is_border_touching": false,
+        "raw_sam_score": 0.001318359375
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0002",
+      "score": 4.8828125e-05,
+      "area_px": 41071,
+      "bbox_xyxy": [
+        7,
+        755,
+        487,
+        925
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0002.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 41071,
+        "bbox_width": 480,
+        "bbox_height": 170,
+        "aspect_ratio": 2.823529411764706,
+        "extent": 0.5033210784313725,
+        "solidity": 0.6386861895354025,
+        "circularity": 0.08504362530770765,
+        "is_border_touching": false,
+        "raw_sam_score": 4.8828125e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0003",
+      "score": 6.510416666666667e-05,
+      "area_px": 18963,
+      "bbox_xyxy": [
+        202,
+        149,
+        408,
+        365
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0003.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 18963,
+        "bbox_width": 206,
+        "bbox_height": 216,
+        "aspect_ratio": 0.9537037037037037,
+        "extent": 0.4261731391585761,
+        "solidity": 0.612447524488572,
+        "circularity": 0.06438833788353898,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0004",
+      "score": 0.002864583333333333,
+      "area_px": 17948,
+      "bbox_xyxy": [
+        717,
+        219,
+        941,
+        374
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0004.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 17948,
+        "bbox_width": 224,
+        "bbox_height": 155,
+        "aspect_ratio": 1.4451612903225806,
+        "extent": 0.5169354838709678,
+        "solidity": 0.7044610415825595,
+        "circularity": 0.14071292252406167,
+        "is_border_touching": false,
+        "raw_sam_score": 0.002864583333333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0005",
+      "score": 0.0019449869791666667,
+      "area_px": 12644,
+      "bbox_xyxy": [
+        231,
+        362,
+        375,
+        547
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0005.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 12644,
+        "bbox_width": 144,
+        "bbox_height": 185,
+        "aspect_ratio": 0.7783783783783784,
+        "extent": 0.4746246246246246,
+        "solidity": 0.7009135027119612,
+        "circularity": 0.22153898255928126,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0019449869791666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0006",
+      "score": 0.018245442708333334,
+      "area_px": 8785,
+      "bbox_xyxy": [
+        97,
+        132,
+        216,
+        266
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0006.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 8785,
+        "bbox_width": 119,
+        "bbox_height": 134,
+        "aspect_ratio": 0.8880597014925373,
+        "extent": 0.5509218612818262,
+        "solidity": 0.6752777889205344,
+        "circularity": 0.15228196643096262,
+        "is_border_touching": false,
+        "raw_sam_score": 0.018245442708333334
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0007",
+      "score": 9.765625e-05,
+      "area_px": 7937,
+      "bbox_xyxy": [
+        379,
+        366,
+        484,
+        518
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0007.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 7937,
+        "bbox_width": 105,
+        "bbox_height": 152,
+        "aspect_ratio": 0.6907894736842105,
+        "extent": 0.4973057644110276,
+        "solidity": 0.657767729031697,
+        "circularity": 0.12663178615312007,
+        "is_border_touching": false,
+        "raw_sam_score": 9.765625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0008",
+      "score": 0.0006429036458333333,
+      "area_px": 6575,
+      "bbox_xyxy": [
+        708,
+        103,
+        796,
+        206
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0008.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 6575,
+        "bbox_width": 88,
+        "bbox_height": 103,
+        "aspect_ratio": 0.8543689320388349,
+        "extent": 0.725397175639894,
+        "solidity": 0.8334312765262815,
+        "circularity": 0.41833133878641465,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0006429036458333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0009",
+      "score": 0.3532796223958333,
+      "area_px": 6338,
+      "bbox_xyxy": [
+        30,
+        38,
+        143,
+        150
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0009.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 6338,
+        "bbox_width": 113,
+        "bbox_height": 112,
+        "aspect_ratio": 1.0089285714285714,
+        "extent": 0.5007901390644753,
+        "solidity": 0.6813700636583855,
+        "circularity": 0.17859526942733092,
+        "is_border_touching": false,
+        "raw_sam_score": 0.3532796223958333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0010",
+      "score": 6.510416666666667e-05,
+      "area_px": 4635,
+      "bbox_xyxy": [
+        489,
+        458,
+        580,
+        556
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0010.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 4635,
+        "bbox_width": 91,
+        "bbox_height": 98,
+        "aspect_ratio": 0.9285714285714286,
+        "extent": 0.5197353666741422,
+        "solidity": 0.6245704467353952,
+        "circularity": 0.1261478256583369,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0011",
+      "score": 0.00016276041666666666,
+      "area_px": 4582,
+      "bbox_xyxy": [
+        190,
+        525,
+        295,
+        618
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0011.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 4582,
+        "bbox_width": 105,
+        "bbox_height": 93,
+        "aspect_ratio": 1.1290322580645162,
+        "extent": 0.4692268305171531,
+        "solidity": 0.6425038753967668,
+        "circularity": 0.15575298558318698,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00016276041666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0012",
+      "score": 0.004931640625,
+      "area_px": 4319,
+      "bbox_xyxy": [
+        929,
+        357,
+        1031,
+        487
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0012.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 4319,
+        "bbox_width": 102,
+        "bbox_height": 130,
+        "aspect_ratio": 0.7846153846153846,
+        "extent": 0.3257164404223228,
+        "solidity": 0.5596804187616227,
+        "circularity": 0.15734228043588624,
+        "is_border_touching": false,
+        "raw_sam_score": 0.004931640625
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0013",
+      "score": 0.026505533854166666,
+      "area_px": 4173,
+      "bbox_xyxy": [
+        965,
+        744,
+        1056,
+        821
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0013.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 4173,
+        "bbox_width": 91,
+        "bbox_height": 77,
+        "aspect_ratio": 1.1818181818181819,
+        "extent": 0.5955473098330241,
+        "solidity": 0.7275192046995029,
+        "circularity": 0.14993227577019128,
+        "is_border_touching": false,
+        "raw_sam_score": 0.026505533854166666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0014",
+      "score": 8.951822916666666e-05,
+      "area_px": 3939,
+      "bbox_xyxy": [
+        82,
+        531,
+        172,
+        605
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0014.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 3939,
+        "bbox_width": 90,
+        "bbox_height": 74,
+        "aspect_ratio": 1.2162162162162162,
+        "extent": 0.5914414414414414,
+        "solidity": 0.8055201698513801,
+        "circularity": 0.36976780425456973,
+        "is_border_touching": false,
+        "raw_sam_score": 8.951822916666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0015",
+      "score": 0.0034016927083333334,
+      "area_px": 3019,
+      "bbox_xyxy": [
+        984,
+        673,
+        1053,
+        740
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0015.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 3019,
+        "bbox_width": 69,
+        "bbox_height": 67,
+        "aspect_ratio": 1.0298507462686568,
+        "extent": 0.6530391520657581,
+        "solidity": 0.8828965308286624,
+        "circularity": 0.6254498325455277,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0034016927083333334
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0016",
+      "score": 0.00013020833333333333,
+      "area_px": 2779,
+      "bbox_xyxy": [
+        469,
+        670,
+        565,
+        787
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0016.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2779,
+        "bbox_width": 96,
+        "bbox_height": 117,
+        "aspect_ratio": 0.8205128205128205,
+        "extent": 0.24741809116809116,
+        "solidity": 0.4641074507668572,
+        "circularity": 0.1256035835815931,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00013020833333333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0017",
+      "score": 0.00035807291666666664,
+      "area_px": 2699,
+      "bbox_xyxy": [
+        751,
+        374,
+        838,
+        438
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0017.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2699,
+        "bbox_width": 87,
+        "bbox_height": 64,
+        "aspect_ratio": 1.359375,
+        "extent": 0.48473419540229884,
+        "solidity": 0.5895432692307693,
+        "circularity": 0.10057986862983412,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00035807291666666664
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0018",
+      "score": 0.0029703776041666665,
+      "area_px": 2643,
+      "bbox_xyxy": [
+        661,
+        47,
+        741,
+        122
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0018.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2643,
+        "bbox_width": 80,
+        "bbox_height": 75,
+        "aspect_ratio": 1.0666666666666667,
+        "extent": 0.4405,
+        "solidity": 0.6163320605985959,
+        "circularity": 0.12425898917328429,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0029703776041666665
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0019",
+      "score": 0.00016276041666666666,
+      "area_px": 2456,
+      "bbox_xyxy": [
+        770,
+        4,
+        832,
+        67
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0019.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2456,
+        "bbox_width": 62,
+        "bbox_height": 63,
+        "aspect_ratio": 0.9841269841269841,
+        "extent": 0.6287762416794674,
+        "solidity": 0.8404940923737916,
+        "circularity": 0.4872055133434594,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00016276041666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0020",
+      "score": 0.008780924479166667,
+      "area_px": 2249,
+      "bbox_xyxy": [
+        348,
+        617,
+        409,
+        681
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0020.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2249,
+        "bbox_width": 61,
+        "bbox_height": 64,
+        "aspect_ratio": 0.953125,
+        "extent": 0.5760758196721312,
+        "solidity": 0.7620664998212371,
+        "circularity": 0.3841228819644332,
+        "is_border_touching": false,
+        "raw_sam_score": 0.008780924479166667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0021",
+      "score": 0.3306884765625,
+      "area_px": 2090,
+      "bbox_xyxy": [
+        32,
+        597,
+        99,
+        647
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0021.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2090,
+        "bbox_width": 67,
+        "bbox_height": 50,
+        "aspect_ratio": 1.34,
+        "extent": 0.6238805970149254,
+        "solidity": 0.7343104096204435,
+        "circularity": 0.2657576698643868,
+        "is_border_touching": false,
+        "raw_sam_score": 0.3306884765625
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0022",
+      "score": 0.0028238932291666666,
+      "area_px": 2083,
+      "bbox_xyxy": [
+        638,
+        162,
+        705,
+        234
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0022.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2083,
+        "bbox_width": 67,
+        "bbox_height": 72,
+        "aspect_ratio": 0.9305555555555556,
+        "extent": 0.4317993366500829,
+        "solidity": 0.6904269972451791,
+        "circularity": 0.28065694232618715,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0028238932291666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0023",
+      "score": 0.019344075520833334,
+      "area_px": 2024,
+      "bbox_xyxy": [
+        927,
+        702,
+        981,
+        760
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0023.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 2024,
+        "bbox_width": 54,
+        "bbox_height": 58,
+        "aspect_ratio": 0.9310344827586207,
+        "extent": 0.6462324393358876,
+        "solidity": 0.7793398533007335,
+        "circularity": 0.38582396039323463,
+        "is_border_touching": false,
+        "raw_sam_score": 0.019344075520833334
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0024",
+      "score": 0.00013020833333333333,
+      "area_px": 1716,
+      "bbox_xyxy": [
+        1080,
+        869,
+        1152,
+        940
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0024.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1716,
+        "bbox_width": 72,
+        "bbox_height": 71,
+        "aspect_ratio": 1.0140845070422535,
+        "extent": 0.33568075117370894,
+        "solidity": 0.5398645127670662,
+        "circularity": 0.14071128491167678,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00013020833333333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0025",
+      "score": 0.00015462239583333333,
+      "area_px": 1658,
+      "bbox_xyxy": [
+        255,
+        698,
+        307,
+        748
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0025.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1658,
+        "bbox_width": 52,
+        "bbox_height": 50,
+        "aspect_ratio": 1.04,
+        "extent": 0.6376923076923077,
+        "solidity": 0.7934893184130214,
+        "circularity": 0.41555736677050586,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00015462239583333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0026",
+      "score": 7.32421875e-05,
+      "area_px": 1623,
+      "bbox_xyxy": [
+        299,
+        358,
+        351,
+        426
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0026.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1623,
+        "bbox_width": 52,
+        "bbox_height": 68,
+        "aspect_ratio": 0.7647058823529411,
+        "extent": 0.45899321266968324,
+        "solidity": 0.5735892961023851,
+        "circularity": 0.1853591849469793,
+        "is_border_touching": false,
+        "raw_sam_score": 7.32421875e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0027",
+      "score": 0.00078125,
+      "area_px": 1356,
+      "bbox_xyxy": [
+        751,
+        831,
+        783,
+        895
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0027.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1356,
+        "bbox_width": 32,
+        "bbox_height": 64,
+        "aspect_ratio": 0.5,
+        "extent": 0.662109375,
+        "solidity": 0.8285063455906281,
+        "circularity": 0.4605722460644023,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00078125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0028",
+      "score": 4.8828125e-05,
+      "area_px": 1213,
+      "bbox_xyxy": [
+        148,
+        51,
+        207,
+        95
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0028.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1213,
+        "bbox_width": 59,
+        "bbox_height": 44,
+        "aspect_ratio": 1.3409090909090908,
+        "extent": 0.4672573189522342,
+        "solidity": 0.7035759096612296,
+        "circularity": 0.32340488583335264,
+        "is_border_touching": false,
+        "raw_sam_score": 4.8828125e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0029",
+      "score": 8.138020833333333e-06,
+      "area_px": 1186,
+      "bbox_xyxy": [
+        662,
+        152,
+        707,
+        195
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0029.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1186,
+        "bbox_width": 45,
+        "bbox_height": 43,
+        "aspect_ratio": 1.0465116279069768,
+        "extent": 0.6129198966408269,
+        "solidity": 0.7217621729049354,
+        "circularity": 0.2972600151857897,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-06
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0030",
+      "score": 0.00025227864583333336,
+      "area_px": 1081,
+      "bbox_xyxy": [
+        402,
+        917,
+        470,
+        948
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0030.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1081,
+        "bbox_width": 68,
+        "bbox_height": 31,
+        "aspect_ratio": 2.193548387096774,
+        "extent": 0.5128083491461101,
+        "solidity": 0.5913312693498453,
+        "circularity": 0.1523623162809543,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00025227864583333336
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0031",
+      "score": 2.44140625e-05,
+      "area_px": 1028,
+      "bbox_xyxy": [
+        940,
+        652,
+        988,
+        691
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0031.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 1028,
+        "bbox_width": 48,
+        "bbox_height": 39,
+        "aspect_ratio": 1.2307692307692308,
+        "extent": 0.5491452991452992,
+        "solidity": 0.7589928057553957,
+        "circularity": 0.3919882865689034,
+        "is_border_touching": false,
+        "raw_sam_score": 2.44140625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0032",
+      "score": 0.00016276041666666666,
+      "area_px": 876,
+      "bbox_xyxy": [
+        296,
+        263,
+        333,
+        311
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0032.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 876,
+        "bbox_width": 37,
+        "bbox_height": 48,
+        "aspect_ratio": 0.7708333333333334,
+        "extent": 0.49324324324324326,
+        "solidity": 0.6549441456350849,
+        "circularity": 0.27139495499249416,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00016276041666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0033",
+      "score": 0.0006998697916666667,
+      "area_px": 849,
+      "bbox_xyxy": [
+        30,
+        55,
+        69,
+        98
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0033.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 849,
+        "bbox_width": 39,
+        "bbox_height": 43,
+        "aspect_ratio": 0.9069767441860465,
+        "extent": 0.5062611806797853,
+        "solidity": 0.6421711899791231,
+        "circularity": 0.20265628499006455,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0006998697916666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0034",
+      "score": 5.6966145833333334e-05,
+      "area_px": 728,
+      "bbox_xyxy": [
+        185,
+        171,
+        219,
+        217
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0034.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 728,
+        "bbox_width": 34,
+        "bbox_height": 46,
+        "aspect_ratio": 0.7391304347826086,
+        "extent": 0.46547314578005117,
+        "solidity": 0.628305582761998,
+        "circularity": 0.21105023759798694,
+        "is_border_touching": false,
+        "raw_sam_score": 5.6966145833333334e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0035",
+      "score": 0.0020914713541666666,
+      "area_px": 683,
+      "bbox_xyxy": [
+        714,
+        766,
+        751,
+        804
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0035.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 683,
+        "bbox_width": 37,
+        "bbox_height": 38,
+        "aspect_ratio": 0.9736842105263158,
+        "extent": 0.48577524893314367,
+        "solidity": 0.6060453400503778,
+        "circularity": 0.22996769540255163,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0020914713541666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0036",
+      "score": 1.6276041666666666e-05,
+      "area_px": 601,
+      "bbox_xyxy": [
+        1223,
+        235,
+        1267,
+        263
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0036.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 601,
+        "bbox_width": 44,
+        "bbox_height": 28,
+        "aspect_ratio": 1.5714285714285714,
+        "extent": 0.4878246753246753,
+        "solidity": 0.673125,
+        "circularity": 0.34946375167306337,
+        "is_border_touching": false,
+        "raw_sam_score": 1.6276041666666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0037",
+      "score": 0.0004150390625,
+      "area_px": 593,
+      "bbox_xyxy": [
+        598,
+        313,
+        627,
+        344
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0037.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 593,
+        "bbox_width": 29,
+        "bbox_height": 31,
+        "aspect_ratio": 0.9354838709677419,
+        "extent": 0.6596218020022246,
+        "solidity": 0.8707102952913008,
+        "circularity": 0.6024594081490727,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0004150390625
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0038",
+      "score": 0.045694986979166664,
+      "area_px": 548,
+      "bbox_xyxy": [
+        1209,
+        600,
+        1233,
+        632
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0038.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 548,
+        "bbox_width": 24,
+        "bbox_height": 32,
+        "aspect_ratio": 0.75,
+        "extent": 0.7135416666666666,
+        "solidity": 0.8701298701298701,
+        "circularity": 0.6396810950305574,
+        "is_border_touching": false,
+        "raw_sam_score": 0.045694986979166664
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0039",
+      "score": 0.00023600260416666667,
+      "area_px": 441,
+      "bbox_xyxy": [
+        1194,
+        919,
+        1212,
+        950
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0039.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 441,
+        "bbox_width": 18,
+        "bbox_height": 31,
+        "aspect_ratio": 0.5806451612903226,
+        "extent": 0.7903225806451613,
+        "solidity": 0.8501070663811563,
+        "circularity": 0.5419893580784119,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00023600260416666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0040",
+      "score": 0.0002766927083333333,
+      "area_px": 420,
+      "bbox_xyxy": [
+        809,
+        131,
+        834,
+        154
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0040.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 420,
+        "bbox_width": 25,
+        "bbox_height": 23,
+        "aspect_ratio": 1.0869565217391304,
+        "extent": 0.7304347826086957,
+        "solidity": 0.8443449048152296,
+        "circularity": 0.5768089821854067,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0002766927083333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0041",
+      "score": 0.000146484375,
+      "area_px": 395,
+      "bbox_xyxy": [
+        503,
+        104,
+        525,
+        153
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0041.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 395,
+        "bbox_width": 22,
+        "bbox_height": 49,
+        "aspect_ratio": 0.4489795918367347,
+        "extent": 0.36641929499072357,
+        "solidity": 0.6894093686354379,
+        "circularity": 0.2773590273875332,
+        "is_border_touching": false,
+        "raw_sam_score": 0.000146484375
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0042",
+      "score": 8.138020833333333e-06,
+      "area_px": 368,
+      "bbox_xyxy": [
+        668,
+        238,
+        688,
+        276
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0042.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 368,
+        "bbox_width": 20,
+        "bbox_height": 38,
+        "aspect_ratio": 0.5263157894736842,
+        "extent": 0.4842105263157895,
+        "solidity": 0.6481481481481481,
+        "circularity": 0.31396596546287375,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-06
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0043",
+      "score": 0.0015055338541666667,
+      "area_px": 361,
+      "bbox_xyxy": [
+        198,
+        511,
+        221,
+        529
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0043.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 361,
+        "bbox_width": 23,
+        "bbox_height": 18,
+        "aspect_ratio": 1.2777777777777777,
+        "extent": 0.8719806763285024,
+        "solidity": 0.9206798866855525,
+        "circularity": 0.6955443973382038,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0015055338541666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0044",
+      "score": 0.021647135416666668,
+      "area_px": 356,
+      "bbox_xyxy": [
+        836,
+        198,
+        854,
+        227
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0044.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 356,
+        "bbox_width": 18,
+        "bbox_height": 29,
+        "aspect_ratio": 0.6206896551724138,
+        "extent": 0.6819923371647509,
+        "solidity": 0.8184176394293126,
+        "circularity": 0.5058929243848569,
+        "is_border_touching": false,
+        "raw_sam_score": 0.021647135416666668
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0045",
+      "score": 0.00013020833333333333,
+      "area_px": 354,
+      "bbox_xyxy": [
+        941,
+        62,
+        961,
+        89
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0045.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 354,
+        "bbox_width": 20,
+        "bbox_height": 27,
+        "aspect_ratio": 0.7407407407407407,
+        "extent": 0.6555555555555556,
+        "solidity": 0.7469733656174334,
+        "circularity": 0.4061527342057252,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00013020833333333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0046",
+      "score": 9.765625e-05,
+      "area_px": 348,
+      "bbox_xyxy": [
+        318,
+        601,
+        341,
+        621
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0046.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 348,
+        "bbox_width": 23,
+        "bbox_height": 20,
+        "aspect_ratio": 1.15,
+        "extent": 0.7565217391304347,
+        "solidity": 0.8933143669985776,
+        "circularity": 0.6842037611982108,
+        "is_border_touching": false,
+        "raw_sam_score": 9.765625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0047",
+      "score": 0.009611002604166667,
+      "area_px": 332,
+      "bbox_xyxy": [
+        902,
+        248,
+        926,
+        270
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0047.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 332,
+        "bbox_width": 24,
+        "bbox_height": 22,
+        "aspect_ratio": 1.0909090909090908,
+        "extent": 0.6287878787878788,
+        "solidity": 0.7007389162561576,
+        "circularity": 0.3346773409305093,
+        "is_border_touching": false,
+        "raw_sam_score": 0.009611002604166667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0048",
+      "score": 0.00030110677083333335,
+      "area_px": 331,
+      "bbox_xyxy": [
+        1141,
+        8,
+        1169,
+        30
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0048.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 331,
+        "bbox_width": 28,
+        "bbox_height": 22,
+        "aspect_ratio": 1.2727272727272727,
+        "extent": 0.5373376623376623,
+        "solidity": 0.6868932038834952,
+        "circularity": 0.31892244652540624,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00030110677083333335
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0049",
+      "score": 0.0002766927083333333,
+      "area_px": 329,
+      "bbox_xyxy": [
+        467,
+        871,
+        484,
+        894
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0049.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 329,
+        "bbox_width": 17,
+        "bbox_height": 23,
+        "aspect_ratio": 0.7391304347826086,
+        "extent": 0.8414322250639387,
+        "solidity": 0.8817365269461078,
+        "circularity": 0.6602050363441092,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0002766927083333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0050",
+      "score": 0.006876627604166667,
+      "area_px": 314,
+      "bbox_xyxy": [
+        1045,
+        161,
+        1063,
+        188
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0050.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 314,
+        "bbox_width": 18,
+        "bbox_height": 27,
+        "aspect_ratio": 0.6666666666666666,
+        "extent": 0.6460905349794238,
+        "solidity": 0.8204747774480712,
+        "circularity": 0.5205674400737621,
+        "is_border_touching": false,
+        "raw_sam_score": 0.006876627604166667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0051",
+      "score": 1.6276041666666666e-05,
+      "area_px": 300,
+      "bbox_xyxy": [
+        1003,
+        628,
+        1023,
+        650
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0051.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 300,
+        "bbox_width": 20,
+        "bbox_height": 22,
+        "aspect_ratio": 0.9090909090909091,
+        "extent": 0.6818181818181818,
+        "solidity": 0.8183229813664596,
+        "circularity": 0.5106324390952537,
+        "is_border_touching": false,
+        "raw_sam_score": 1.6276041666666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0052",
+      "score": 6.510416666666667e-05,
+      "area_px": 280,
+      "bbox_xyxy": [
+        659,
+        279,
+        685,
+        294
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0052.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 280,
+        "bbox_width": 26,
+        "bbox_height": 15,
+        "aspect_ratio": 1.7333333333333334,
+        "extent": 0.717948717948718,
+        "solidity": 0.7824,
+        "circularity": 0.4879063071327575,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0053",
+      "score": 0.0016927083333333334,
+      "area_px": 271,
+      "bbox_xyxy": [
+        284,
+        826,
+        304,
+        848
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0053.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 271,
+        "bbox_width": 20,
+        "bbox_height": 22,
+        "aspect_ratio": 0.9090909090909091,
+        "extent": 0.615909090909091,
+        "solidity": 0.7892976588628763,
+        "circularity": 0.4779749277263238,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0016927083333333334
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0054",
+      "score": 6.510416666666667e-05,
+      "area_px": 256,
+      "bbox_xyxy": [
+        53,
+        36,
+        71,
+        51
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0054.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 256,
+        "bbox_width": 18,
+        "bbox_height": 15,
+        "aspect_ratio": 1.2,
+        "extent": 0.9481481481481482,
+        "solidity": 0.9301848049281314,
+        "circularity": 0.7313425308800471,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0055",
+      "score": 0.00048014322916666664,
+      "area_px": 255,
+      "bbox_xyxy": [
+        1046,
+        483,
+        1066,
+        503
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0055.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 255,
+        "bbox_width": 20,
+        "bbox_height": 20,
+        "aspect_ratio": 1.0,
+        "extent": 0.6375,
+        "solidity": 0.8582375478927203,
+        "circularity": 0.6036935431460875,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00048014322916666664
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0056",
+      "score": 3.255208333333333e-05,
+      "area_px": 253,
+      "bbox_xyxy": [
+        945,
+        92,
+        963,
+        111
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0056.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 253,
+        "bbox_width": 18,
+        "bbox_height": 19,
+        "aspect_ratio": 0.9473684210526315,
+        "extent": 0.7397660818713451,
+        "solidity": 0.9205702647657841,
+        "circularity": 0.7604232654831359,
+        "is_border_touching": false,
+        "raw_sam_score": 3.255208333333333e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0057",
+      "score": 1.6276041666666666e-05,
+      "area_px": 248,
+      "bbox_xyxy": [
+        226,
+        473,
+        250,
+        492
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0057.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 248,
+        "bbox_width": 24,
+        "bbox_height": 19,
+        "aspect_ratio": 1.263157894736842,
+        "extent": 0.543859649122807,
+        "solidity": 0.8401559454191033,
+        "circularity": 0.5148239889708535,
+        "is_border_touching": false,
+        "raw_sam_score": 1.6276041666666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0058",
+      "score": 0.0007242838541666667,
+      "area_px": 242,
+      "bbox_xyxy": [
+        620,
+        211,
+        648,
+        222
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0058.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 242,
+        "bbox_width": 28,
+        "bbox_height": 11,
+        "aspect_ratio": 2.5454545454545454,
+        "extent": 0.7857142857142857,
+        "solidity": 0.8842105263157894,
+        "circularity": 0.5342110620908214,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0007242838541666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0059",
+      "score": 0.0029378255208333333,
+      "area_px": 242,
+      "bbox_xyxy": [
+        308,
+        919,
+        322,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0059.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 242,
+        "bbox_width": 14,
+        "bbox_height": 19,
+        "aspect_ratio": 0.7368421052631579,
+        "extent": 0.9097744360902256,
+        "solidity": 0.9327548806941431,
+        "circularity": 0.786043915733188,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0029378255208333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0060",
+      "score": 0.00030110677083333335,
+      "area_px": 235,
+      "bbox_xyxy": [
+        730,
+        565,
+        748,
+        587
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0060.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 235,
+        "bbox_width": 18,
+        "bbox_height": 22,
+        "aspect_ratio": 0.8181818181818182,
+        "extent": 0.5934343434343434,
+        "solidity": 0.7598499061913696,
+        "circularity": 0.4950111049849477,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00030110677083333335
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0061",
+      "score": 3.255208333333333e-05,
+      "area_px": 230,
+      "bbox_xyxy": [
+        1199,
+        104,
+        1217,
+        124
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0061.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 230,
+        "bbox_width": 18,
+        "bbox_height": 20,
+        "aspect_ratio": 0.9,
+        "extent": 0.6388888888888888,
+        "solidity": 0.8155737704918032,
+        "circularity": 0.5235368427892341,
+        "is_border_touching": false,
+        "raw_sam_score": 3.255208333333333e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0062",
+      "score": 0.00016276041666666666,
+      "area_px": 215,
+      "bbox_xyxy": [
+        1193,
+        238,
+        1209,
+        258
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0062.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 215,
+        "bbox_width": 16,
+        "bbox_height": 20,
+        "aspect_ratio": 0.8,
+        "extent": 0.671875,
+        "solidity": 0.8782201405152225,
+        "circularity": 0.6359218089888737,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00016276041666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0063",
+      "score": 5.6966145833333334e-05,
+      "area_px": 206,
+      "bbox_xyxy": [
+        233,
+        56,
+        250,
+        70
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0063.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 206,
+        "bbox_width": 17,
+        "bbox_height": 14,
+        "aspect_ratio": 1.2142857142857142,
+        "extent": 0.865546218487395,
+        "solidity": 0.9355670103092784,
+        "circularity": 0.7809614768346265,
+        "is_border_touching": false,
+        "raw_sam_score": 5.6966145833333334e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0064",
+      "score": 0.0006754557291666667,
+      "area_px": 205,
+      "bbox_xyxy": [
+        1137,
+        883,
+        1149,
+        903
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0064.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 205,
+        "bbox_width": 12,
+        "bbox_height": 20,
+        "aspect_ratio": 0.6,
+        "extent": 0.8541666666666666,
+        "solidity": 0.8106235565819861,
+        "circularity": 0.5240810130635473,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0006754557291666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0065",
+      "score": 8.138020833333333e-05,
+      "area_px": 200,
+      "bbox_xyxy": [
+        488,
+        648,
+        508,
+        661
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0065.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 200,
+        "bbox_width": 20,
+        "bbox_height": 13,
+        "aspect_ratio": 1.5384615384615385,
+        "extent": 0.7692307692307693,
+        "solidity": 0.9354838709677419,
+        "circularity": 0.6818763282185142,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0066",
+      "score": 0.00030924479166666665,
+      "area_px": 200,
+      "bbox_xyxy": [
+        1171,
+        919,
+        1184,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0066.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 200,
+        "bbox_width": 13,
+        "bbox_height": 19,
+        "aspect_ratio": 0.6842105263157895,
+        "extent": 0.8097165991902834,
+        "solidity": 0.8406862745098039,
+        "circularity": 0.5452382083508861,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00030924479166666665
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0067",
+      "score": 0.0002766927083333333,
+      "area_px": 181,
+      "bbox_xyxy": [
+        1214,
+        919,
+        1228,
+        940
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0067.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 181,
+        "bbox_width": 14,
+        "bbox_height": 21,
+        "aspect_ratio": 0.6666666666666666,
+        "extent": 0.6156462585034014,
+        "solidity": 0.5870445344129555,
+        "circularity": 0.30371726792207726,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0002766927083333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0068",
+      "score": 8.138020833333333e-06,
+      "area_px": 177,
+      "bbox_xyxy": [
+        1138,
+        378,
+        1155,
+        395
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0068.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 177,
+        "bbox_width": 17,
+        "bbox_height": 17,
+        "aspect_ratio": 1.0,
+        "extent": 0.6124567474048442,
+        "solidity": 0.8689458689458689,
+        "circularity": 0.6177218333213736,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-06
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0069",
+      "score": 1.6276041666666666e-05,
+      "area_px": 175,
+      "bbox_xyxy": [
+        811,
+        209,
+        825,
+        224
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0069.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 175,
+        "bbox_width": 14,
+        "bbox_height": 15,
+        "aspect_ratio": 0.9333333333333333,
+        "extent": 0.8333333333333334,
+        "solidity": 0.9503105590062112,
+        "circularity": 0.8130905232548864,
+        "is_border_touching": false,
+        "raw_sam_score": 1.6276041666666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0070",
+      "score": 0.000146484375,
+      "area_px": 174,
+      "bbox_xyxy": [
+        668,
+        47,
+        682,
+        63
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0070.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 174,
+        "bbox_width": 14,
+        "bbox_height": 16,
+        "aspect_ratio": 0.875,
+        "extent": 0.7767857142857143,
+        "solidity": 0.8846153846153846,
+        "circularity": 0.6846062732278313,
+        "is_border_touching": false,
+        "raw_sam_score": 0.000146484375
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0071",
+      "score": 0.00016276041666666666,
+      "area_px": 170,
+      "bbox_xyxy": [
+        682,
+        352,
+        694,
+        369
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0071.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 170,
+        "bbox_width": 12,
+        "bbox_height": 17,
+        "aspect_ratio": 0.7058823529411765,
+        "extent": 0.8333333333333334,
+        "solidity": 0.9213836477987422,
+        "circularity": 0.7019135243722365,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00016276041666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0072",
+      "score": 0.0007242838541666667,
+      "area_px": 169,
+      "bbox_xyxy": [
+        355,
+        189,
+        371,
+        206
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0072.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 169,
+        "bbox_width": 16,
+        "bbox_height": 17,
+        "aspect_ratio": 0.9411764705882353,
+        "extent": 0.6213235294117647,
+        "solidity": 0.8957055214723927,
+        "circularity": 0.6503782248055147,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0007242838541666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0073",
+      "score": 8.951822916666666e-05,
+      "area_px": 167,
+      "bbox_xyxy": [
+        1075,
+        553,
+        1088,
+        567
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0073.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 167,
+        "bbox_width": 13,
+        "bbox_height": 14,
+        "aspect_ratio": 0.9285714285714286,
+        "extent": 0.9175824175824175,
+        "solidity": 0.9258064516129032,
+        "circularity": 0.7594618891827674,
+        "is_border_touching": false,
+        "raw_sam_score": 8.951822916666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0074",
+      "score": 2.44140625e-05,
+      "area_px": 156,
+      "bbox_xyxy": [
+        350,
+        213,
+        361,
+        233
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0074.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 156,
+        "bbox_width": 11,
+        "bbox_height": 20,
+        "aspect_ratio": 0.55,
+        "extent": 0.7090909090909091,
+        "solidity": 0.7377521613832853,
+        "circularity": 0.42588609910978675,
+        "is_border_touching": false,
+        "raw_sam_score": 2.44140625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0075",
+      "score": 0.00205078125,
+      "area_px": 152,
+      "bbox_xyxy": [
+        35,
+        920,
+        47,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0075.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 152,
+        "bbox_width": 12,
+        "bbox_height": 18,
+        "aspect_ratio": 0.6666666666666666,
+        "extent": 0.7037037037037037,
+        "solidity": 0.5450121654501217,
+        "circularity": 0.20444656506914338,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00205078125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0076",
+      "score": 0.00011393229166666667,
+      "area_px": 149,
+      "bbox_xyxy": [
+        660,
+        343,
+        680,
+        353
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0076.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 149,
+        "bbox_width": 20,
+        "bbox_height": 10,
+        "aspect_ratio": 2.0,
+        "extent": 0.745,
+        "solidity": 0.8586206896551725,
+        "circularity": 0.5701236188419063,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00011393229166666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0077",
+      "score": 6.510416666666667e-05,
+      "area_px": 148,
+      "bbox_xyxy": [
+        1091,
+        909,
+        1105,
+        922
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0077.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 148,
+        "bbox_width": 14,
+        "bbox_height": 13,
+        "aspect_ratio": 1.0769230769230769,
+        "extent": 0.8131868131868132,
+        "solidity": 0.9411764705882353,
+        "circularity": 0.807637254936037,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0078",
+      "score": 0.00029296875,
+      "area_px": 144,
+      "bbox_xyxy": [
+        333,
+        919,
+        346,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0078.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 144,
+        "bbox_width": 13,
+        "bbox_height": 19,
+        "aspect_ratio": 0.6842105263157895,
+        "extent": 0.582995951417004,
+        "solidity": 0.4931506849315068,
+        "circularity": 0.22621700234104872,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00029296875
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0079",
+      "score": 6.510416666666667e-05,
+      "area_px": 141,
+      "bbox_xyxy": [
+        1156,
+        919,
+        1168,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0079.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 141,
+        "bbox_width": 12,
+        "bbox_height": 19,
+        "aspect_ratio": 0.631578947368421,
+        "extent": 0.618421052631579,
+        "solidity": 0.49061032863849763,
+        "circularity": 0.22026374453556935,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0080",
+      "score": 0.00030110677083333335,
+      "area_px": 139,
+      "bbox_xyxy": [
+        563,
+        502,
+        578,
+        514
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0080.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 139,
+        "bbox_width": 15,
+        "bbox_height": 12,
+        "aspect_ratio": 1.25,
+        "extent": 0.7722222222222223,
+        "solidity": 0.9296875,
+        "circularity": 0.7508502564369864,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00030110677083333335
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0081",
+      "score": 0.000244140625,
+      "area_px": 139,
+      "bbox_xyxy": [
+        1244,
+        919,
+        1256,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0081.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 139,
+        "bbox_width": 12,
+        "bbox_height": 19,
+        "aspect_ratio": 0.631578947368421,
+        "extent": 0.6096491228070176,
+        "solidity": 0.48699763593380613,
+        "circularity": 0.22043407054103076,
+        "is_border_touching": false,
+        "raw_sam_score": 0.000244140625
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0082",
+      "score": 5.6966145833333334e-05,
+      "area_px": 125,
+      "bbox_xyxy": [
+        1260,
+        920,
+        1272,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0082.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 125,
+        "bbox_width": 12,
+        "bbox_height": 18,
+        "aspect_ratio": 0.6666666666666666,
+        "extent": 0.5787037037037037,
+        "solidity": 0.5913312693498453,
+        "circularity": 0.3003292569600285,
+        "is_border_touching": false,
+        "raw_sam_score": 5.6966145833333334e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0083",
+      "score": 2.44140625e-05,
+      "area_px": 117,
+      "bbox_xyxy": [
+        482,
+        140,
+        494,
+        154
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0083.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 117,
+        "bbox_width": 12,
+        "bbox_height": 14,
+        "aspect_ratio": 0.8571428571428571,
+        "extent": 0.6964285714285714,
+        "solidity": 0.8508771929824561,
+        "circularity": 0.6120376039864511,
+        "is_border_touching": false,
+        "raw_sam_score": 2.44140625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0084",
+      "score": 0.05255533854166667,
+      "area_px": 116,
+      "bbox_xyxy": [
+        753,
+        667,
+        766,
+        681
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0084.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 116,
+        "bbox_width": 13,
+        "bbox_height": 14,
+        "aspect_ratio": 0.9285714285714286,
+        "extent": 0.6373626373626373,
+        "solidity": 0.768595041322314,
+        "circularity": 0.5042455949134862,
+        "is_border_touching": false,
+        "raw_sam_score": 0.05255533854166667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0085",
+      "score": 3.255208333333333e-05,
+      "area_px": 114,
+      "bbox_xyxy": [
+        853,
+        214,
+        859,
+        234
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0085.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 114,
+        "bbox_width": 6,
+        "bbox_height": 20,
+        "aspect_ratio": 0.3,
+        "extent": 0.95,
+        "solidity": 0.7629310344827587,
+        "circularity": 0.3877316113870277,
+        "is_border_touching": false,
+        "raw_sam_score": 3.255208333333333e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0086",
+      "score": 8.138020833333333e-05,
+      "area_px": 113,
+      "bbox_xyxy": [
+        19,
+        920,
+        30,
+        938
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0086.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 113,
+        "bbox_width": 11,
+        "bbox_height": 18,
+        "aspect_ratio": 0.6111111111111112,
+        "extent": 0.5707070707070707,
+        "solidity": 0.5454545454545454,
+        "circularity": 0.3000398888855548,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0087",
+      "score": 0.0032470703125,
+      "area_px": 111,
+      "bbox_xyxy": [
+        860,
+        235,
+        877,
+        245
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0087.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 111,
+        "bbox_width": 17,
+        "bbox_height": 10,
+        "aspect_ratio": 1.7,
+        "extent": 0.6529411764705882,
+        "solidity": 0.777292576419214,
+        "circularity": 0.4895109840378784,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0032470703125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0088",
+      "score": 0.0005615234375,
+      "area_px": 109,
+      "bbox_xyxy": [
+        399,
+        202,
+        412,
+        213
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0088.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 109,
+        "bbox_width": 13,
+        "bbox_height": 11,
+        "aspect_ratio": 1.1818181818181819,
+        "extent": 0.7622377622377622,
+        "solidity": 0.8271028037383178,
+        "circularity": 0.5862059209967287,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0005615234375
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0089",
+      "score": 0.0018798828125,
+      "area_px": 109,
+      "bbox_xyxy": [
+        1065,
+        298,
+        1074,
+        317
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0089.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 109,
+        "bbox_width": 9,
+        "bbox_height": 19,
+        "aspect_ratio": 0.47368421052631576,
+        "extent": 0.6374269005847953,
+        "solidity": 0.7088607594936709,
+        "circularity": 0.38825005353689634,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0018798828125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0090",
+      "score": 8.138020833333333e-06,
+      "area_px": 106,
+      "bbox_xyxy": [
+        736,
+        591,
+        751,
+        600
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0090.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 106,
+        "bbox_width": 15,
+        "bbox_height": 9,
+        "aspect_ratio": 1.6666666666666667,
+        "extent": 0.7851851851851852,
+        "solidity": 0.9210526315789473,
+        "circularity": 0.6741903941832988,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-06
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0091",
+      "score": 0.00020345052083333334,
+      "area_px": 96,
+      "bbox_xyxy": [
+        806,
+        501,
+        822,
+        509
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0091.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 96,
+        "bbox_width": 16,
+        "bbox_height": 8,
+        "aspect_ratio": 2.0,
+        "extent": 0.75,
+        "solidity": 0.7170731707317073,
+        "circularity": 0.4083947904330057,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00020345052083333334
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0092",
+      "score": 0.00020345052083333334,
+      "area_px": 95,
+      "bbox_xyxy": [
+        588,
+        121,
+        602,
+        129
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0092.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 95,
+        "bbox_width": 14,
+        "bbox_height": 8,
+        "aspect_ratio": 1.75,
+        "extent": 0.8482142857142857,
+        "solidity": 0.8287292817679558,
+        "circularity": 0.5521826665766418,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00020345052083333334
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0093",
+      "score": 0.0001708984375,
+      "area_px": 90,
+      "bbox_xyxy": [
+        1215,
+        137,
+        1226,
+        147
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0093.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 90,
+        "bbox_width": 11,
+        "bbox_height": 10,
+        "aspect_ratio": 1.1,
+        "extent": 0.8181818181818182,
+        "solidity": 0.91875,
+        "circularity": 0.7305717711510231,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0001708984375
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0094",
+      "score": 0.0001708984375,
+      "area_px": 90,
+      "bbox_xyxy": [
+        860,
+        221,
+        873,
+        229
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0094.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 90,
+        "bbox_width": 13,
+        "bbox_height": 8,
+        "aspect_ratio": 1.625,
+        "extent": 0.8653846153846154,
+        "solidity": 0.9012345679012346,
+        "circularity": 0.7022716072441028,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0001708984375
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0095",
+      "score": 8.138020833333333e-06,
+      "area_px": 88,
+      "bbox_xyxy": [
+        516,
+        459,
+        525,
+        470
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0095.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 88,
+        "bbox_width": 9,
+        "bbox_height": 11,
+        "aspect_ratio": 0.8181818181818182,
+        "extent": 0.8888888888888888,
+        "solidity": 0.8703703703703703,
+        "circularity": 0.6874202285811849,
+        "is_border_touching": false,
+        "raw_sam_score": 8.138020833333333e-06
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0096",
+      "score": 0.00016276041666666666,
+      "area_px": 87,
+      "bbox_xyxy": [
+        525,
+        262,
+        538,
+        274
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0096.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 87,
+        "bbox_width": 13,
+        "bbox_height": 12,
+        "aspect_ratio": 1.0833333333333333,
+        "extent": 0.5576923076923077,
+        "solidity": 0.6802030456852792,
+        "circularity": 0.4388908118499025,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00016276041666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0097",
+      "score": 0.0006998697916666667,
+      "area_px": 87,
+      "bbox_xyxy": [
+        982,
+        647,
+        993,
+        655
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0097.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 87,
+        "bbox_width": 11,
+        "bbox_height": 8,
+        "aspect_ratio": 1.375,
+        "extent": 0.9886363636363636,
+        "solidity": 0.9594594594594594,
+        "circularity": 0.8039374470307673,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0006998697916666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0098",
+      "score": 5.6966145833333334e-05,
+      "area_px": 86,
+      "bbox_xyxy": [
+        201,
+        90,
+        210,
+        102
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0098.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 86,
+        "bbox_width": 9,
+        "bbox_height": 12,
+        "aspect_ratio": 0.75,
+        "extent": 0.7962962962962963,
+        "solidity": 0.8662420382165605,
+        "circularity": 0.5873659548042693,
+        "is_border_touching": false,
+        "raw_sam_score": 5.6966145833333334e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0099",
+      "score": 9.765625e-05,
+      "area_px": 86,
+      "bbox_xyxy": [
+        271,
+        675,
+        283,
+        684
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0099.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 86,
+        "bbox_width": 12,
+        "bbox_height": 9,
+        "aspect_ratio": 1.3333333333333333,
+        "extent": 0.7962962962962963,
+        "solidity": 0.9090909090909091,
+        "circularity": 0.7192877682917339,
+        "is_border_touching": false,
+        "raw_sam_score": 9.765625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0100",
+      "score": 5.6966145833333334e-05,
+      "area_px": 86,
+      "bbox_xyxy": [
+        1173,
+        737,
+        1181,
+        747
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0100.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 86,
+        "bbox_width": 8,
+        "bbox_height": 10,
+        "aspect_ratio": 0.8,
+        "extent": 1.075,
+        "solidity": 1.0,
+        "circularity": 0.9099116230042201,
+        "is_border_touching": false,
+        "raw_sam_score": 5.6966145833333334e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0101",
+      "score": 0.0007893880208333333,
+      "area_px": 85,
+      "bbox_xyxy": [
+        649,
+        60,
+        660,
+        70
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0101.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 85,
+        "bbox_width": 11,
+        "bbox_height": 10,
+        "aspect_ratio": 1.1,
+        "extent": 0.7727272727272727,
+        "solidity": 0.8670886075949367,
+        "circularity": 0.6808730112087766,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0007893880208333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0102",
+      "score": 0.00026041666666666666,
+      "area_px": 83,
+      "bbox_xyxy": [
+        68,
+        12,
+        80,
+        20
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0102.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 83,
+        "bbox_width": 12,
+        "bbox_height": 8,
+        "aspect_ratio": 1.5,
+        "extent": 0.8645833333333334,
+        "solidity": 0.8859060402684564,
+        "circularity": 0.6650696794812928,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00026041666666666666
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0103",
+      "score": 0.00030924479166666665,
+      "area_px": 83,
+      "bbox_xyxy": [
+        63,
+        70,
+        74,
+        78
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0103.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 83,
+        "bbox_width": 11,
+        "bbox_height": 8,
+        "aspect_ratio": 1.375,
+        "extent": 0.9431818181818182,
+        "solidity": 0.9645390070921985,
+        "circularity": 0.8271215343552919,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00030924479166666665
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0104",
+      "score": 0.015022786458333333,
+      "area_px": 82,
+      "bbox_xyxy": [
+        1144,
+        34,
+        1157,
+        43
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0104.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 82,
+        "bbox_width": 13,
+        "bbox_height": 9,
+        "aspect_ratio": 1.4444444444444444,
+        "extent": 0.7008547008547008,
+        "solidity": 0.6722222222222223,
+        "circularity": 0.3800211763054443,
+        "is_border_touching": false,
+        "raw_sam_score": 0.015022786458333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0105",
+      "score": 0.00018717447916666668,
+      "area_px": 82,
+      "bbox_xyxy": [
+        833,
+        120,
+        846,
+        128
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0105.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 82,
+        "bbox_width": 13,
+        "bbox_height": 8,
+        "aspect_ratio": 1.625,
+        "extent": 0.7884615384615384,
+        "solidity": 0.8657718120805369,
+        "circularity": 0.6008649448080859,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00018717447916666668
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0106",
+      "score": 0.003369140625,
+      "area_px": 82,
+      "bbox_xyxy": [
+        136,
+        587,
+        147,
+        599
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0106.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 82,
+        "bbox_width": 11,
+        "bbox_height": 12,
+        "aspect_ratio": 0.9166666666666666,
+        "extent": 0.6212121212121212,
+        "solidity": 0.7126436781609196,
+        "circularity": 0.45647100437002397,
+        "is_border_touching": false,
+        "raw_sam_score": 0.003369140625
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0107",
+      "score": 0.06435546875,
+      "area_px": 74,
+      "bbox_xyxy": [
+        102,
+        625,
+        112,
+        632
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0107.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 74,
+        "bbox_width": 10,
+        "bbox_height": 7,
+        "aspect_ratio": 1.4285714285714286,
+        "extent": 1.0571428571428572,
+        "solidity": 0.959349593495935,
+        "circularity": 0.797776913143144,
+        "is_border_touching": false,
+        "raw_sam_score": 0.06435546875
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0108",
+      "score": 0.00029296875,
+      "area_px": 74,
+      "bbox_xyxy": [
+        698,
+        771,
+        709,
+        781
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0108.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 74,
+        "bbox_width": 11,
+        "bbox_height": 10,
+        "aspect_ratio": 1.1,
+        "extent": 0.6727272727272727,
+        "solidity": 0.8085106382978723,
+        "circularity": 0.5483490631906008,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00029296875
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0109",
+      "score": 0.0007405598958333333,
+      "area_px": 73,
+      "bbox_xyxy": [
+        723,
+        417,
+        732,
+        425
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0109.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 73,
+        "bbox_width": 9,
+        "bbox_height": 8,
+        "aspect_ratio": 1.125,
+        "extent": 1.0138888888888888,
+        "solidity": 0.9590163934426229,
+        "circularity": 0.8223146556064651,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0007405598958333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0110",
+      "score": 2.44140625e-05,
+      "area_px": 73,
+      "bbox_xyxy": [
+        1073,
+        488,
+        1088,
+        494
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0110.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 73,
+        "bbox_width": 15,
+        "bbox_height": 6,
+        "aspect_ratio": 2.5,
+        "extent": 0.8111111111111111,
+        "solidity": 0.8014705882352942,
+        "circularity": 0.4768035994876379,
+        "is_border_touching": false,
+        "raw_sam_score": 2.44140625e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0111",
+      "score": 0.00048828125,
+      "area_px": 71,
+      "bbox_xyxy": [
+        947,
+        419,
+        955,
+        428
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0111.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 71,
+        "bbox_width": 8,
+        "bbox_height": 9,
+        "aspect_ratio": 0.8888888888888888,
+        "extent": 0.9861111111111112,
+        "solidity": 0.95,
+        "circularity": 0.8335721491085845,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00048828125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0112",
+      "score": 0.0009684244791666667,
+      "area_px": 68,
+      "bbox_xyxy": [
+        587,
+        104,
+        594,
+        115
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0112.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 68,
+        "bbox_width": 7,
+        "bbox_height": 11,
+        "aspect_ratio": 0.6363636363636364,
+        "extent": 0.8831168831168831,
+        "solidity": 0.8760330578512396,
+        "circularity": 0.6792297979160882,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0009684244791666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0113",
+      "score": 0.00011393229166666667,
+      "area_px": 67,
+      "bbox_xyxy": [
+        387,
+        204,
+        398,
+        212
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0113.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 67,
+        "bbox_width": 11,
+        "bbox_height": 8,
+        "aspect_ratio": 1.375,
+        "extent": 0.7613636363636364,
+        "solidity": 0.7874015748031497,
+        "circularity": 0.5283385796107681,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00011393229166666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0114",
+      "score": 8.951822916666666e-05,
+      "area_px": 67,
+      "bbox_xyxy": [
+        984,
+        380,
+        991,
+        389
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0114.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 67,
+        "bbox_width": 7,
+        "bbox_height": 9,
+        "aspect_ratio": 0.7777777777777778,
+        "extent": 1.0634920634920635,
+        "solidity": 0.9636363636363636,
+        "circularity": 0.8208139155979778,
+        "is_border_touching": false,
+        "raw_sam_score": 8.951822916666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0115",
+      "score": 0.0003173828125,
+      "area_px": 61,
+      "bbox_xyxy": [
+        1070,
+        498,
+        1077,
+        507
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0115.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 61,
+        "bbox_width": 7,
+        "bbox_height": 9,
+        "aspect_ratio": 0.7777777777777778,
+        "extent": 0.9682539682539683,
+        "solidity": 0.9411764705882353,
+        "circularity": 0.8085181381420814,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0003173828125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0116",
+      "score": 4.0690104166666664e-05,
+      "area_px": 61,
+      "bbox_xyxy": [
+        319,
+        624,
+        328,
+        630
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0116.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 61,
+        "bbox_width": 9,
+        "bbox_height": 6,
+        "aspect_ratio": 1.5,
+        "extent": 1.1296296296296295,
+        "solidity": 0.96875,
+        "circularity": 0.7325752149316458,
+        "is_border_touching": false,
+        "raw_sam_score": 4.0690104166666664e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0117",
+      "score": 0.13999837239583332,
+      "area_px": 61,
+      "bbox_xyxy": [
+        725,
+        729,
+        731,
+        741
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0117.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 61,
+        "bbox_width": 6,
+        "bbox_height": 12,
+        "aspect_ratio": 0.5,
+        "extent": 0.8472222222222222,
+        "solidity": 0.8240740740740741,
+        "circularity": 0.511297233120975,
+        "is_border_touching": false,
+        "raw_sam_score": 0.13999837239583332
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0118",
+      "score": 0.0004069010416666667,
+      "area_px": 61,
+      "bbox_xyxy": [
+        277,
+        753,
+        284,
+        761
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0118.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 61,
+        "bbox_width": 7,
+        "bbox_height": 8,
+        "aspect_ratio": 0.875,
+        "extent": 1.0892857142857142,
+        "solidity": 0.9696969696969697,
+        "circularity": 0.8598880704404595,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0004069010416666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0119",
+      "score": 1.6276041666666666e-05,
+      "area_px": 59,
+      "bbox_xyxy": [
+        1223,
+        261,
+        1232,
+        268
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0119.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 59,
+        "bbox_width": 9,
+        "bbox_height": 7,
+        "aspect_ratio": 1.2857142857142858,
+        "extent": 0.9365079365079365,
+        "solidity": 0.89,
+        "circularity": 0.6616798513897029,
+        "is_border_touching": false,
+        "raw_sam_score": 1.6276041666666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0120",
+      "score": 6.510416666666667e-05,
+      "area_px": 59,
+      "bbox_xyxy": [
+        574,
+        487,
+        582,
+        494
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0120.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 59,
+        "bbox_width": 8,
+        "bbox_height": 7,
+        "aspect_ratio": 1.1428571428571428,
+        "extent": 1.0535714285714286,
+        "solidity": 0.9789473684210527,
+        "circularity": 0.8711245165935407,
+        "is_border_touching": false,
+        "raw_sam_score": 6.510416666666667e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0121",
+      "score": 0.009537760416666667,
+      "area_px": 58,
+      "bbox_xyxy": [
+        63,
+        641,
+        72,
+        648
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0121.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 58,
+        "bbox_width": 9,
+        "bbox_height": 7,
+        "aspect_ratio": 1.2857142857142858,
+        "extent": 0.9206349206349206,
+        "solidity": 0.8613861386138614,
+        "circularity": 0.646810641246114,
+        "is_border_touching": false,
+        "raw_sam_score": 0.009537760416666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0122",
+      "score": 4.0690104166666664e-05,
+      "area_px": 57,
+      "bbox_xyxy": [
+        1174,
+        227,
+        1180,
+        236
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0122.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 57,
+        "bbox_width": 6,
+        "bbox_height": 9,
+        "aspect_ratio": 0.6666666666666666,
+        "extent": 1.0555555555555556,
+        "solidity": 0.967032967032967,
+        "circularity": 0.7882307383326835,
+        "is_border_touching": false,
+        "raw_sam_score": 4.0690104166666664e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0123",
+      "score": 0.0335205078125,
+      "area_px": 57,
+      "bbox_xyxy": [
+        954,
+        364,
+        966,
+        372
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0123.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 57,
+        "bbox_width": 12,
+        "bbox_height": 8,
+        "aspect_ratio": 1.5,
+        "extent": 0.59375,
+        "solidity": 0.6290322580645161,
+        "circularity": 0.3681620967778974,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0335205078125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0124",
+      "score": 0.0001953125,
+      "area_px": 57,
+      "bbox_xyxy": [
+        1105,
+        927,
+        1113,
+        935
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0124.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 57,
+        "bbox_width": 8,
+        "bbox_height": 8,
+        "aspect_ratio": 1.0,
+        "extent": 0.890625,
+        "solidity": 0.9175257731958762,
+        "circularity": 0.7827795900914076,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0001953125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0125",
+      "score": 0.0001220703125,
+      "area_px": 56,
+      "bbox_xyxy": [
+        580,
+        230,
+        587,
+        238
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0125.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 56,
+        "bbox_width": 7,
+        "bbox_height": 8,
+        "aspect_ratio": 0.875,
+        "extent": 1.0,
+        "solidity": 0.967032967032967,
+        "circularity": 0.8628811819610296,
+        "is_border_touching": false,
+        "raw_sam_score": 0.0001220703125
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0126",
+      "score": 0.002587890625,
+      "area_px": 56,
+      "bbox_xyxy": [
+        718,
+        458,
+        732,
+        462
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0126.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 56,
+        "bbox_width": 14,
+        "bbox_height": 4,
+        "aspect_ratio": 3.5,
+        "extent": 1.0,
+        "solidity": 0.8020833333333334,
+        "circularity": 0.3933440801133487,
+        "is_border_touching": false,
+        "raw_sam_score": 0.002587890625
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0127",
+      "score": 0.016691080729166665,
+      "area_px": 55,
+      "bbox_xyxy": [
+        1085,
+        138,
+        1094,
+        144
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0127.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 55,
+        "bbox_width": 9,
+        "bbox_height": 6,
+        "aspect_ratio": 1.5,
+        "extent": 1.0185185185185186,
+        "solidity": 0.9213483146067416,
+        "circularity": 0.6735784152724456,
+        "is_border_touching": false,
+        "raw_sam_score": 0.016691080729166665
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0128",
+      "score": 1.6276041666666666e-05,
+      "area_px": 55,
+      "bbox_xyxy": [
+        826,
+        200,
+        833,
+        207
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0128.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 55,
+        "bbox_width": 7,
+        "bbox_height": 7,
+        "aspect_ratio": 1.0,
+        "extent": 1.1224489795918366,
+        "solidity": 0.9659090909090909,
+        "circularity": 0.8496755770607721,
+        "is_border_touching": false,
+        "raw_sam_score": 1.6276041666666666e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0129",
+      "score": 4.0690104166666664e-05,
+      "area_px": 53,
+      "bbox_xyxy": [
+        902,
+        335,
+        909,
+        342
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0129.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 53,
+        "bbox_width": 7,
+        "bbox_height": 7,
+        "aspect_ratio": 1.0,
+        "extent": 1.0816326530612246,
+        "solidity": 0.9879518072289156,
+        "circularity": 0.8593766154771787,
+        "is_border_touching": false,
+        "raw_sam_score": 4.0690104166666664e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0130",
+      "score": 4.8828125e-05,
+      "area_px": 51,
+      "bbox_xyxy": [
+        228,
+        36,
+        236,
+        42
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0130.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 51,
+        "bbox_width": 8,
+        "bbox_height": 6,
+        "aspect_ratio": 1.3333333333333333,
+        "extent": 1.0625,
+        "solidity": 0.9875,
+        "circularity": 0.8690195040872569,
+        "is_border_touching": false,
+        "raw_sam_score": 4.8828125e-05
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0131",
+      "score": 0.005875651041666667,
+      "area_px": 51,
+      "bbox_xyxy": [
+        281,
+        532,
+        288,
+        539
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0131.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 51,
+        "bbox_width": 7,
+        "bbox_height": 7,
+        "aspect_ratio": 1.0,
+        "extent": 1.0408163265306123,
+        "solidity": 0.927710843373494,
+        "circularity": 0.7697061109844641,
+        "is_border_touching": false,
+        "raw_sam_score": 0.005875651041666667
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0132",
+      "score": 0.3243489583333333,
+      "area_px": 50,
+      "bbox_xyxy": [
+        275,
+        513,
+        281,
+        521
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0132.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 50,
+        "bbox_width": 6,
+        "bbox_height": 8,
+        "aspect_ratio": 0.75,
+        "extent": 1.0416666666666667,
+        "solidity": 0.95,
+        "circularity": 0.7964953919549047,
+        "is_border_touching": false,
+        "raw_sam_score": 0.3243489583333333
+      }
+    },
+    {
+      "candidate_id": "sample_01_cand_0133",
+      "score": 0.00026041666666666666,
+      "area_px": 50,
+      "bbox_xyxy": [
+        713,
+        949,
+        720,
+        956
+      ],
+      "mask_path": "C:\\Users\\admin\\Documents\\GitHub\\ni-analysis-v2\\results\\candidate_runs\\sample_01\\candidate_masks\\sample_01_cand_0133.png",
+      "source_image_id": "sample_01",
+      "metadata": {
+        "area_px": 50,
+        "bbox_width": 7,
+        "bbox_height": 7,
+        "aspect_ratio": 1.0,
+        "extent": 1.0204081632653061,
+        "solidity": 0.9743589743589743,
+        "circularity": 0.7964953997105558,
+        "is_border_touching": false,
+        "raw_sam_score": 0.00026041666666666666
+      }
+    }
+  ]
+}

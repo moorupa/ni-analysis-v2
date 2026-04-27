@@ -14,7 +14,7 @@ authors = [
 dependencies = [
   "numpy>=1.24",
   "pandas>=2.0",
-  "opencv-python>=4.8",
+  "opencv-python-headless>=4.8",
   "Pillow>=10.0",
   "matplotlib>=3.7",
   "scipy>=1.10",
@@ -28,3 +28,16 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+ni-candidates = "scripts.run_candidate_generation:main"
+ni-review = "scripts.review_session:main"
+ni-export-reviewed = "scripts.export_reviewed_dataset:main"
+ni-extract-features = "scripts.extract_features_from_reviewed:main"
+ni-export-objectness = "scripts.export_objectness_dataset:main"
+ni-train-objectness = "scripts.train_objectness_prior:main"

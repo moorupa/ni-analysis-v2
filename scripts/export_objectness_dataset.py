@@ -32,6 +32,21 @@ def build_candidate_lookup(manifest: dict) -> dict[str, dict]:
     return lookup
 
 
+def iter_decisions(session: dict):
+    decisions = session.get("decisions", [])
+
+    # Backward-compatibility for older dict-based formats.
+    if isinstance(decisions, dict):
+        for candidate_id, decision in decisions.items():
+            yield candidate_id, decision
+        return
+
+    for decision in decisions:
+        candidate_id = decision.get("candidate_id")
+        if candidate_id:
+            yield candidate_id, decision
+
+
 def main() -> None:
     args = parse_args()
 
@@ -41,9 +56,8 @@ def main() -> None:
     candidate_lookup = build_candidate_lookup(manifest)
 
     rows: list[dict] = []
-    decisions = session.get("decisions", {})
 
-    for candidate_id, decision in decisions.items():
+    for candidate_id, decision in iter_decisions(session):
         cand = candidate_lookup.get(candidate_id)
         if cand is None:
             continue
