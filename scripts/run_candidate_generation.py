@@ -45,6 +45,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--image-id", type=str, required=True, help="Logical image/sample ID.")
     parser.add_argument("--output-dir", type=str, required=True, help="Output directory.")
     parser.add_argument("--checkpoint", type=str, default="", help="Optional model checkpoint.")
+    parser.add_argument(
+        "--model-type",
+        type=str,
+        default="vit_b",
+        help="SAM model registry key: vit_b, vit_l, vit_h, default, or fallback.",
+    )
     parser.add_argument("--device", type=str, default=None, help="cuda or cpu.")
     parser.add_argument("--min-area", type=int, default=50)
     parser.add_argument("--max-area", type=int, default=None)
@@ -69,6 +75,7 @@ def main() -> None:
 
     backend = SAMBackend(
         checkpoint_path=args.checkpoint or None,
+        model_type=args.model_type,
         device=args.device,
     )
 

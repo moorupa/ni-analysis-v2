@@ -44,7 +44,7 @@ class SAMBackend:
     def __init__(
         self,
         checkpoint_path: str | Path | None = None,
-        model_type: str = "sam3",
+        model_type: str = "vit_b",
         device: Optional[str] = None,
     ) -> None:
         self.checkpoint_path = Path(checkpoint_path) if checkpoint_path else None
@@ -61,29 +61,40 @@ class SAMBackend:
         """
         Build model object for the selected backend.
 
-        Current behavior
-        ----------------
-        - returns None if the actual SAM backend is not available yet
-        - this lets the repository structure work before the final model binding
-
-        Replace the branch bodies below with your actual SAM/SAM2/SAM3 imports.
+        If no checkpoint is provided, the lightweight connected-component
+        fallback remains available so the repository is still runnable.
         """
-        if self.model_type.lower() in {"sam3", "sam2", "sam"}:
-            # Example future implementation sketch:
-            #
-            # if self.model_type.lower() == "sam3":
-            #     from sam3.model_builder import build_sam3_image_model
-            #     model = build_sam3_image_model(checkpoint=str(self.checkpoint_path))
-            # elif self.model_type.lower() == "sam2":
-            #     from sam2.build_sam import build_sam2
-            #     model = build_sam2(checkpoint=str(self.checkpoint_path))
-            # else:
-            #     from segment_anything import sam_model_registry
-            #     model = sam_model_registry["vit_b"](checkpoint=str(self.checkpoint_path))
-            #
-            # model.to(self.device)
-            # model.eval()
-            # return model
+        model_name = self.model_type.lower()
+        if model_name in {"sam3", "sam2"}:
+            return None
+
+        if model_name == "sam":
+            model_name = "vit_b"
+
+        if model_name in {"vit_b", "vit_l", "vit_h", "default"}:
+            if self.checkpoint_path is None:
+                return None
+            if not self.checkpoint_path.exists():
+                raise FileNotFoundError(f"SAM checkpoint not found: {self.checkpoint_path}")
+
+            try:
+                from segment_anything import sam_model_registry
+            except ImportError as exc:
+                raise ImportError(
+                    "segment_anything is required for SAM checkpoint inference. "
+                    "Install it in the active conda environment or omit --checkpoint "
+                    "to use the fallback backend."
+                ) from exc
+
+            if torch is None:
+                raise ImportError("torch is required for SAM checkpoint inference.")
+
+            model = sam_model_registry[model_name](checkpoint=str(self.checkpoint_path))
+            model.to(device=self.device)
+            model.eval()
+            return model
+
+        if model_name == "fallback":
             return None
 
         raise ValueError(f"Unsupported model_type: {self.model_type}")
@@ -133,29 +144,40 @@ class SAMBackend:
 
         model_name = self.model_type.lower()
 
-        if model_name in {"sam", "sam2", "sam3"}:
-            # Replace this block with your actual automatic mask generator.
-            #
-            # Example conceptual pattern:
-            #   generator = SamAutomaticMaskGenerator(
-            #       model=self.model,
-            #       points_per_side=sampling_grid_size,
-            #       pred_iou_thresh=pred_iou_thresh,
-            #       stability_score_thresh=stability_score_thresh,
-            #       min_mask_region_area=min_mask_region_area,
-            #   )
-            #   raw = generator.generate(image_rgb)
-            #   masks = [(item["segmentation"] > 0).astype(np.uint8) for item in raw]
-            #   scores = [float(item.get("predicted_iou", 0.0)) for item in raw]
-            #
-            #   return masks, scores, {"backend_mode": "automatic_mask_generator"}
-            return self._generate_candidates_fallback(
-                image_rgb=image_rgb,
-                sampling_grid_size=sampling_grid_size,
+        if model_name in {"sam", "vit_b", "vit_l", "vit_h", "default"}:
+            from segment_anything import SamAutomaticMaskGenerator
+
+            generator = SamAutomaticMaskGenerator(
+                model=self.model,
+                points_per_side=sampling_grid_size,
                 pred_iou_thresh=pred_iou_thresh,
                 stability_score_thresh=stability_score_thresh,
                 min_mask_region_area=min_mask_region_area,
             )
+
+            if torch is not None:
+                with torch.inference_mode():
+                    raw_masks = generator.generate(image_rgb)
+            else:
+                raw_masks = generator.generate(image_rgb)
+
+            masks = [
+                (item["segmentation"] > 0).astype(np.uint8)
+                for item in raw_masks
+            ]
+            scores = [
+                float(item.get("predicted_iou", item.get("stability_score", 0.0)))
+                for item in raw_masks
+            ]
+
+            return masks, scores, {
+                "backend_mode": "sam_automatic_mask_generator",
+                "sam_raw_mask_count": len(raw_masks),
+                "sampling_grid_size": sampling_grid_size,
+                "pred_iou_thresh": pred_iou_thresh,
+                "stability_score_thresh": stability_score_thresh,
+                "min_mask_region_area": min_mask_region_area,
+            }
 
         raise ValueError(f"Unsupported model_type for candidate generation: {self.model_type}")
 

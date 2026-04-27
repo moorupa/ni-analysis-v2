@@ -1,0 +1,1032 @@
+{
+  "source_image_id": "sample_01_sam_check",
+  "source_image_path": "C:\\Users\\admin\\Downloads\\euang_backup\\4. other info\\Kakaotalks\\260227_0.1M\\R2_0.1M_RE\\AnnoStatus_20260227,120934.jpg",
+  "overlay_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_overlay.png",
+  "candidate_count": 42,
+  "run_metadata": {
+    "mode": "prompt_free_candidate_generation",
+    "device": "cuda",
+    "model_type": "vit_b",
+    "apply_preprocessing": true,
+    "backend_mode": "sam_automatic_mask_generator",
+    "sam_raw_mask_count": 80,
+    "sampling_grid_size": 8,
+    "pred_iou_thresh": 0.7,
+    "stability_score_thresh": 0.7,
+    "min_mask_region_area": 0,
+    "source_image_id": "sample_01_sam_check",
+    "raw_candidate_count": 80,
+    "postprocessed_candidate_count": 42,
+    "objectness_prior_enabled": false
+  },
+  "candidates": [
+    {
+      "candidate_id": "sample_01_sam_check_cand_0001",
+      "score": 0.9843286275863647,
+      "area_px": 38734,
+      "bbox_xyxy": [
+        203,
+        148,
+        412,
+        453
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0001.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 38734,
+        "bbox_width": 209,
+        "bbox_height": 305,
+        "aspect_ratio": 0.6852459016393443,
+        "extent": 0.6076398148874421,
+        "solidity": 0.8504706091280412,
+        "circularity": 0.5174205626013774,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9843286275863647
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0002",
+      "score": 0.9824244976043701,
+      "area_px": 38694,
+      "bbox_xyxy": [
+        332,
+        10,
+        614,
+        241
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0002.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 38694,
+        "bbox_width": 282,
+        "bbox_height": 231,
+        "aspect_ratio": 1.2207792207792207,
+        "extent": 0.593994657824445,
+        "solidity": 0.8754428875122866,
+        "circularity": 0.5664844947169864,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9824244976043701
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0003",
+      "score": 0.9805841445922852,
+      "area_px": 28941,
+      "bbox_xyxy": [
+        807,
+        423,
+        960,
+        730
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0003.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 28941,
+        "bbox_width": 153,
+        "bbox_height": 307,
+        "aspect_ratio": 0.498371335504886,
+        "extent": 0.616146132720189,
+        "solidity": 0.8762360299866624,
+        "circularity": 0.5233359693393778,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9805841445922852
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0004",
+      "score": 0.9790258407592773,
+      "area_px": 21311,
+      "bbox_xyxy": [
+        527,
+        559,
+        683,
+        774
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0004.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 21311,
+        "bbox_width": 156,
+        "bbox_height": 215,
+        "aspect_ratio": 0.7255813953488373,
+        "extent": 0.6353905784138342,
+        "solidity": 0.8528163149235238,
+        "circularity": 0.5066596655229583,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9790258407592773
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0005",
+      "score": 0.9783470630645752,
+      "area_px": 20250,
+      "bbox_xyxy": [
+        717,
+        220,
+        860,
+        443
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0005.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 20250,
+        "bbox_width": 143,
+        "bbox_height": 223,
+        "aspect_ratio": 0.6412556053811659,
+        "extent": 0.6350152090062404,
+        "solidity": 0.8795470068521823,
+        "circularity": 0.5399712589682311,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9783470630645752
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0006",
+      "score": 0.9772606492042542,
+      "area_px": 19703,
+      "bbox_xyxy": [
+        1098,
+        55,
+        1258,
+        281
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0006.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 19703,
+        "bbox_width": 160,
+        "bbox_height": 226,
+        "aspect_ratio": 0.7079646017699115,
+        "extent": 0.5448838495575221,
+        "solidity": 0.8688914306219022,
+        "circularity": 0.4187102219096975,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9772606492042542
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0007",
+      "score": 0.9711474180221558,
+      "area_px": 19083,
+      "bbox_xyxy": [
+        302,
+        764,
+        473,
+        925
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0007.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 19083,
+        "bbox_width": 171,
+        "bbox_height": 161,
+        "aspect_ratio": 1.062111801242236,
+        "extent": 0.6931459082488831,
+        "solidity": 0.930535992290014,
+        "circularity": 0.6854178926462148,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9711474180221558
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0008",
+      "score": 0.9701806306838989,
+      "area_px": 17917,
+      "bbox_xyxy": [
+        545,
+        780,
+        712,
+        909
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0008.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 17917,
+        "bbox_width": 167,
+        "bbox_height": 129,
+        "aspect_ratio": 1.2945736434108528,
+        "extent": 0.8316854662767488,
+        "solidity": 0.9652318785164145,
+        "circularity": 0.729045464390851,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9701806306838989
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0009",
+      "score": 0.9693130254745483,
+      "area_px": 17875,
+      "bbox_xyxy": [
+        963,
+        511,
+        1133,
+        690
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0009.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 17875,
+        "bbox_width": 170,
+        "bbox_height": 179,
+        "aspect_ratio": 0.9497206703910615,
+        "extent": 0.5874137364442984,
+        "solidity": 0.8580829129194999,
+        "circularity": 0.5553768028254724,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9693130254745483
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0010",
+      "score": 0.9673498868942261,
+      "area_px": 16612,
+      "bbox_xyxy": [
+        1118,
+        621,
+        1260,
+        812
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0010.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 16612,
+        "bbox_width": 142,
+        "bbox_height": 191,
+        "aspect_ratio": 0.743455497382199,
+        "extent": 0.6124917041516112,
+        "solidity": 0.8075704312521662,
+        "circularity": 0.42430138132725675,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9673498868942261
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0011",
+      "score": 0.9672189950942993,
+      "area_px": 16394,
+      "bbox_xyxy": [
+        963,
+        14,
+        1094,
+        208
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0011.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 16394,
+        "bbox_width": 131,
+        "bbox_height": 194,
+        "aspect_ratio": 0.6752577319587629,
+        "extent": 0.6450775163295821,
+        "solidity": 0.8569223399158993,
+        "circularity": 0.43438912285502973,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9672189950942993
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0012",
+      "score": 0.9625914096832275,
+      "area_px": 16123,
+      "bbox_xyxy": [
+        503,
+        325,
+        694,
+        477
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0012.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 16123,
+        "bbox_width": 191,
+        "bbox_height": 152,
+        "aspect_ratio": 1.256578947368421,
+        "extent": 0.5553527142463489,
+        "solidity": 0.8272321078623501,
+        "circularity": 0.452142081908821,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9625914096832275
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0013",
+      "score": 0.9616214036941528,
+      "area_px": 13905,
+      "bbox_xyxy": [
+        924,
+        677,
+        1057,
+        830
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0013.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 13905,
+        "bbox_width": 133,
+        "bbox_height": 153,
+        "aspect_ratio": 0.869281045751634,
+        "extent": 0.6833259619637329,
+        "solidity": 0.9129477686611968,
+        "circularity": 0.6471131150502898,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9616214036941528
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0014",
+      "score": 0.9599251747131348,
+      "area_px": 13868,
+      "bbox_xyxy": [
+        160,
+        757,
+        305,
+        895
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0014.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 13868,
+        "bbox_width": 145,
+        "bbox_height": 138,
+        "aspect_ratio": 1.0507246376811594,
+        "extent": 0.6930534732633683,
+        "solidity": 0.915384357504442,
+        "circularity": 0.6710536384289321,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9599251747131348
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0015",
+      "score": 0.9589409828186035,
+      "area_px": 12920,
+      "bbox_xyxy": [
+        334,
+        229,
+        497,
+        452
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0015.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 12920,
+        "bbox_width": 163,
+        "bbox_height": 223,
+        "aspect_ratio": 0.7309417040358744,
+        "extent": 0.3554430658339982,
+        "solidity": 0.6793590951932139,
+        "circularity": 0.31570499487781545,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9589409828186035
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0016",
+      "score": 0.9526276588439941,
+      "area_px": 11673,
+      "bbox_xyxy": [
+        802,
+        728,
+        915,
+        862
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0016.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 11673,
+        "bbox_width": 113,
+        "bbox_height": 134,
+        "aspect_ratio": 0.8432835820895522,
+        "extent": 0.7709021265354643,
+        "solidity": 0.921315821183275,
+        "circularity": 0.6694503482310211,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9526276588439941
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0017",
+      "score": 0.9511882662773132,
+      "area_px": 11450,
+      "bbox_xyxy": [
+        18,
+        32,
+        145,
+        155
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0017.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 11450,
+        "bbox_width": 127,
+        "bbox_height": 123,
+        "aspect_ratio": 1.032520325203252,
+        "extent": 0.7329876448370783,
+        "solidity": 0.9484405909339618,
+        "circularity": 0.7677177184785182,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9511882662773132
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0018",
+      "score": 0.9507911205291748,
+      "area_px": 10208,
+      "bbox_xyxy": [
+        383,
+        367,
+        487,
+        520
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0018.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 10208,
+        "bbox_width": 104,
+        "bbox_height": 153,
+        "aspect_ratio": 0.6797385620915033,
+        "extent": 0.6415284062342886,
+        "solidity": 0.8663893943332467,
+        "circularity": 0.5420904270998935,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9507911205291748
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0019",
+      "score": 0.9484620094299316,
+      "area_px": 9889,
+      "bbox_xyxy": [
+        675,
+        629,
+        759,
+        819
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0019.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 9889,
+        "bbox_width": 84,
+        "bbox_height": 190,
+        "aspect_ratio": 0.4421052631578947,
+        "extent": 0.6196115288220552,
+        "solidity": 0.7777150916784203,
+        "circularity": 0.39799677801860167,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9484620094299316
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0020",
+      "score": 0.9460513591766357,
+      "area_px": 9593,
+      "bbox_xyxy": [
+        481,
+        448,
+        585,
+        569
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0020.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 9593,
+        "bbox_width": 104,
+        "bbox_height": 121,
+        "aspect_ratio": 0.859504132231405,
+        "extent": 0.7623172282263191,
+        "solidity": 0.9322965677777227,
+        "circularity": 0.7132353362089933,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9460513591766357
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0021",
+      "score": 0.9435696601867676,
+      "area_px": 9353,
+      "bbox_xyxy": [
+        511,
+        172,
+        619,
+        296
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0021.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 9353,
+        "bbox_width": 108,
+        "bbox_height": 124,
+        "aspect_ratio": 0.8709677419354839,
+        "extent": 0.6984020310633214,
+        "solidity": 0.8880220951642601,
+        "circularity": 0.6051111291166886,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9435696601867676
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0022",
+      "score": 0.9424948692321777,
+      "area_px": 9077,
+      "bbox_xyxy": [
+        31,
+        531,
+        172,
+        658
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0022.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 9077,
+        "bbox_width": 141,
+        "bbox_height": 127,
+        "aspect_ratio": 1.110236220472441,
+        "extent": 0.5068967442899425,
+        "solidity": 0.8618864993446284,
+        "circularity": 0.5175198923213078,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9424948692321777
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0023",
+      "score": 0.9408042430877686,
+      "area_px": 9027,
+      "bbox_xyxy": [
+        1088,
+        232,
+        1203,
+        344
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0023.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 9027,
+        "bbox_width": 115,
+        "bbox_height": 112,
+        "aspect_ratio": 1.0267857142857142,
+        "extent": 0.7008540372670807,
+        "solidity": 0.9553042541733979,
+        "circularity": 0.8069986451108525,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9408042430877686
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0024",
+      "score": 0.9386039972305298,
+      "area_px": 8709,
+      "bbox_xyxy": [
+        947,
+        266,
+        1058,
+        369
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0024.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 8709,
+        "bbox_width": 111,
+        "bbox_height": 103,
+        "aspect_ratio": 1.0776699029126213,
+        "extent": 0.761742324849121,
+        "solidity": 0.9010512969517671,
+        "circularity": 0.6207337446358419,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9386039972305298
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0025",
+      "score": 0.9369915723800659,
+      "area_px": 7830,
+      "bbox_xyxy": [
+        190,
+        78,
+        310,
+        196
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0025.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 7830,
+        "bbox_width": 120,
+        "bbox_height": 118,
+        "aspect_ratio": 1.0169491525423728,
+        "extent": 0.5529661016949152,
+        "solidity": 0.823900728351767,
+        "circularity": 0.47478675934644565,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9369915723800659
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0026",
+      "score": 0.9362959861755371,
+      "area_px": 7731,
+      "bbox_xyxy": [
+        641,
+        486,
+        741,
+        616
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0026.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 7731,
+        "bbox_width": 100,
+        "bbox_height": 130,
+        "aspect_ratio": 0.7692307692307693,
+        "extent": 0.5946923076923077,
+        "solidity": 0.8779255473604739,
+        "circularity": 0.5798836115748438,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9362959861755371
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0027",
+      "score": 0.9354797601699829,
+      "area_px": 7410,
+      "bbox_xyxy": [
+        1166,
+        310,
+        1265,
+        425
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0027.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 7410,
+        "bbox_width": 99,
+        "bbox_height": 115,
+        "aspect_ratio": 0.8608695652173913,
+        "extent": 0.6508563899868248,
+        "solidity": 0.9046282435129741,
+        "circularity": 0.6773829388754772,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9354797601699829
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0028",
+      "score": 0.9340131282806396,
+      "area_px": 7014,
+      "bbox_xyxy": [
+        524,
+        557,
+        619,
+        668
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0028.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 7014,
+        "bbox_width": 95,
+        "bbox_height": 111,
+        "aspect_ratio": 0.8558558558558559,
+        "extent": 0.6651493598862019,
+        "solidity": 0.9162272211467859,
+        "circularity": 0.6855826249800178,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9340131282806396
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0029",
+      "score": 0.9337657690048218,
+      "area_px": 6837,
+      "bbox_xyxy": [
+        708,
+        104,
+        796,
+        206
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0029.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 6837,
+        "bbox_width": 88,
+        "bbox_height": 102,
+        "aspect_ratio": 0.8627450980392157,
+        "extent": 0.7616978609625669,
+        "solidity": 0.9486216426901,
+        "circularity": 0.7727670389807236,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9337657690048218
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0030",
+      "score": 0.9335726499557495,
+      "area_px": 6807,
+      "bbox_xyxy": [
+        191,
+        524,
+        307,
+        617
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0030.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 6807,
+        "bbox_width": 116,
+        "bbox_height": 93,
+        "aspect_ratio": 1.2473118279569892,
+        "extent": 0.6309788654060067,
+        "solidity": 0.8925619834710744,
+        "circularity": 0.5602177488453646,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9335726499557495
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0031",
+      "score": 0.9318130016326904,
+      "area_px": 6608,
+      "bbox_xyxy": [
+        1010,
+        509,
+        1138,
+        600
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0031.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 6608,
+        "bbox_width": 128,
+        "bbox_height": 91,
+        "aspect_ratio": 1.4065934065934067,
+        "extent": 0.5673076923076923,
+        "solidity": 0.8492157638065111,
+        "circularity": 0.5528854014217878,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9318130016326904
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0032",
+      "score": 0.9315172433853149,
+      "area_px": 6281,
+      "bbox_xyxy": [
+        650,
+        35,
+        745,
+        134
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0032.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 6281,
+        "bbox_width": 95,
+        "bbox_height": 99,
+        "aspect_ratio": 0.9595959595959596,
+        "extent": 0.6678362573099416,
+        "solidity": 0.9403076452131324,
+        "circularity": 0.7509397146795753,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9315172433853149
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0033",
+      "score": 0.929834246635437,
+      "area_px": 4824,
+      "bbox_xyxy": [
+        168,
+        614,
+        264,
+        699
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0033.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 4824,
+        "bbox_width": 96,
+        "bbox_height": 85,
+        "aspect_ratio": 1.1294117647058823,
+        "extent": 0.5911764705882353,
+        "solidity": 0.8153416528492887,
+        "circularity": 0.4685831233371896,
+        "is_border_touching": false,
+        "raw_sam_score": 0.929834246635437
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0034",
+      "score": 0.9295797348022461,
+      "area_px": 4823,
+      "bbox_xyxy": [
+        855,
+        131,
+        933,
+        209
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0034.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 4823,
+        "bbox_width": 78,
+        "bbox_height": 78,
+        "aspect_ratio": 1.0,
+        "extent": 0.7927350427350427,
+        "solidity": 0.9553118017469023,
+        "circularity": 0.7941735462413568,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9295797348022461
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0035",
+      "score": 0.9269518852233887,
+      "area_px": 4687,
+      "bbox_xyxy": [
+        854,
+        270,
+        917,
+        378
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0035.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 4687,
+        "bbox_width": 63,
+        "bbox_height": 108,
+        "aspect_ratio": 0.5833333333333334,
+        "extent": 0.68885949441505,
+        "solidity": 0.8994562530894711,
+        "circularity": 0.5776009465164896,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9269518852233887
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0036",
+      "score": 0.926533579826355,
+      "area_px": 4020,
+      "bbox_xyxy": [
+        965,
+        15,
+        1065,
+        83
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0036.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 4020,
+        "bbox_width": 100,
+        "bbox_height": 68,
+        "aspect_ratio": 1.4705882352941178,
+        "extent": 0.5911764705882353,
+        "solidity": 0.8535408901556676,
+        "circularity": 0.5555927103370599,
+        "is_border_touching": false,
+        "raw_sam_score": 0.926533579826355
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0037",
+      "score": 0.9235845804214478,
+      "area_px": 3534,
+      "bbox_xyxy": [
+        813,
+        391,
+        897,
+        488
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0037.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 3534,
+        "bbox_width": 84,
+        "bbox_height": 97,
+        "aspect_ratio": 0.865979381443299,
+        "extent": 0.4337260677466863,
+        "solidity": 0.7380226480836237,
+        "circularity": 0.36978882882619213,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9235845804214478
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0038",
+      "score": 0.9226784110069275,
+      "area_px": 3421,
+      "bbox_xyxy": [
+        347,
+        624,
+        412,
+        692
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0038.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 3421,
+        "bbox_width": 65,
+        "bbox_height": 68,
+        "aspect_ratio": 0.9558823529411765,
+        "extent": 0.7739819004524887,
+        "solidity": 0.9563777713792111,
+        "circularity": 0.8202384221635237,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9226784110069275
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0039",
+      "score": 0.9199965000152588,
+      "area_px": 2653,
+      "bbox_xyxy": [
+        492,
+        716,
+        566,
+        787
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0039.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 2653,
+        "bbox_width": 74,
+        "bbox_height": 71,
+        "aspect_ratio": 1.0422535211267605,
+        "extent": 0.5049486105824134,
+        "solidity": 0.7466470154753132,
+        "circularity": 0.43034562463711423,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9199965000152588
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0040",
+      "score": 0.9098783135414124,
+      "area_px": 2607,
+      "bbox_xyxy": [
+        1143,
+        498,
+        1202,
+        562
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0040.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 2607,
+        "bbox_width": 59,
+        "bbox_height": 64,
+        "aspect_ratio": 0.921875,
+        "extent": 0.6904131355932204,
+        "solidity": 0.9506126295947219,
+        "circularity": 0.7786791724667622,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9098783135414124
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0041",
+      "score": 0.9042031764984131,
+      "area_px": 1305,
+      "bbox_xyxy": [
+        705,
+        395,
+        746,
+        451
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0041.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 1305,
+        "bbox_width": 41,
+        "bbox_height": 56,
+        "aspect_ratio": 0.7321428571428571,
+        "extent": 0.5683797909407665,
+        "solidity": 0.8230177316828371,
+        "circularity": 0.5484100647120229,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9042031764984131
+      }
+    },
+    {
+      "candidate_id": "sample_01_sam_check_cand_0042",
+      "score": 0.9031781554222107,
+      "area_px": 142,
+      "bbox_xyxy": [
+        80,
+        880,
+        92,
+        899
+      ],
+      "mask_path": "results\\candidate_runs\\sample_01_sam_check\\candidate_masks\\sample_01_sam_check_cand_0042.png",
+      "source_image_id": "sample_01_sam_check",
+      "metadata": {
+        "area_px": 142,
+        "bbox_width": 12,
+        "bbox_height": 19,
+        "aspect_ratio": 0.631578947368421,
+        "extent": 0.6228070175438597,
+        "solidity": 0.6899696048632219,
+        "circularity": 0.4135389867983017,
+        "is_border_touching": false,
+        "raw_sam_score": 0.9031781554222107
+      }
+    }
+  ]
+}
